@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>VoenSite</title>
+</head>
+<body>
+    <div class="top">
+        <div class="header">
+            <div class="header__up">
+                <div class="logo">Тут наше лого</div>
+                <div class="adress">Тут у нас зачем то адрес</div>
+                <div class="vizitka">Ну а тут наши контакты</div>
+            </div>
+            <div class="header__down">
+                <ul class="nav">
+                    <a href="#"><li>Услуги военного юриста</li></a>
+                    <a href="#"><li>Военная ипотека</li></a>
+                    <a href="#"><li>Кейсы</li></a>
+                    <a href="#"><li>Отзывы</li></a>
+                    <a href="#"><li>Полезные материалы</li></a>
+                    <a href="#"><li>О компании</li></a>
+                    <a href="#"><li>Контакты</li></a>
+                </ul>
+            </div>
+        </div>
+        <div class="help">
+            <div class="help__up">Помощь военного юриста</div>
+            <div class="help__down">
+                <div class="help__down__left">
+                    <div class="help__down__left__header">Юридическая защита военнослужащих и их семей</div>
+                    <div class="p">+ 450 успешных дел</div>
+                    <div class="p">+ 135.000.000 выплачено нашим клиентам</div>
+                    <div class="p">+ работаем по договору</div>
+                    <div class="p">+ возможна постоплата / рассрочка</div>
+                </div>
+                <div class="help__down__right">
+                    <div class="help__down__right__header">Консультация онлайн Skypr / WhatsApp / Viber / Telegram</div>
+                    <form class="cons__form" action="/submit" method="post">
+                        <label for="phone">Введите номер телефона:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                        <button type="submit">Получить консультацию юриста</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main__header">С нами работают военнослужащие:</div>
+            <div class="main__list">
+                <div class="main__checklist">МО РФ</div>
+                <div class="main__checklist">ФСБ</div>
+                <div class="main__checklist">ГИБДД</div>
+                <div class="main__checklist">МЧС</div>
+                <div class="main__checklist">МВД</div>
+                <div class="main__checklist">Петухгвардия</div>
+            </div>
+            <div class="main__content">
+                <div class="main__content__header">Военное правовое бюро "Юстиция"</div>
+                <div class="main__content__list">
+                    <p>+ Решаем <br>
+                    - Восстановление прав (выплаты, компенсации, незаконное увольнение <br>
+                    - Установление статуса (пропавшие без вести, гибель).<br>
+                    - Споры с военнами инстанциями и судами
+                    </p>
+                    <p>
+                        + Услуги:
+                        - Консультации по службе, дисциплинарным вопросам. <br>
+                        - Подготовка документов для госорганов. <br>
+                        - Защита в судах и военных учреждениях.
+                    </p>
+                    <p>
+                        + Наши преимущества: <br>
+                        - Эксперты в военном праве <br>
+                        - Работаем "под ключ" от консультаций до суда <br>
+                    </p>
+                    <p>Не боритесь с системой в одиночку - ваши права под защитой</p>
+                </div>
+                <div class="main__content__form">
+                    <div class="main__content__form__header">Есть вопрос? Задайте его ниже и получите консультацию военного юриста</div>
+                    <form class="cons__form" action="/submit" method="post">
+                        <label for="question">Ваш вопрос:</label>
+                        <textarea id="question" name="question" rows="4" required></textarea>
+
+                        <label for="phone">Номер телефона:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required pattern="^\+7\s?\(?\d{3}\)?[\s-]?\d{3}[\s-]?\d{2}[\s-]?\d{2}$">
+
+                        <button type="submit">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="service">
+            <div class="service__header">Услуги военного юриста</div>
+            <div class="services">
+                <div class="service__list">Выплаты участникам СВО</div>
+                <div class="service__list">Выплаты по ранению</div>
+                <div class="service__list">Выплаты по смерти</div>
+                <div class="service__list">Военная ипотека / НИС</div>
+                <div class="service__list">Банкротство военнослужащих</div>
+                <div class="service__list">Безвести пропавшие СВО</div>
+                <div class="service__list">Военная травма</div>
+                <div class="service__list">Военный адвокат</div>
+                <div class="service__list"></div>
+            </div>
+        </div>
+        <div class="feedback">
+            <div class="feadback__header">
+                отзывы о работе юристов ВПР "Юстиция"
+            </div>
+            <div class="feadback__list">
+                <div class="feadback__checklist">Отзывы, оставленные на сайте, слайдер влево-вправо</div>
+                <div class="feadback__checklist">Отзывы с яндекс карт там что-то типа виджета есть от яндекса, поищу как встроить это дело</div>
+                <div class="feadback__checklist">Отзывы из социальных сетей и мессенджеров слайдером</div>
+                <div class="feadback__checklist">Отзывы с сайтов отзовиков слайдером</div>
+            </div>
+            <div class="feadback__form">
+                <div class="main__content__form__header">Нужна помощь военного юриста? Оставьте заявку:</div>
+                <form class="cons__form" action="/submit" method="post">
+                    <label for="question">Ваш вопрос:</label>
+                    <textarea id="question" name="question" rows="4" required></textarea>
+
+                    <label for="phone">Номер телефона:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required pattern="^\+7\s?\(?\d{3}\)?[\s-]?\d{3}[\s-]?\d{2}[\s-]?\d{2}$">
+
+                    <button type="submit">Отправить</button>
+            </div>
+        </div>
+        <div class="cases">
+            <div class="cases__up">
+                <div class="cases__up__header">Кейсы наших военных юристов</div>
+                <div class="cases__up__main">
+                    Кейсы слайдами с ссылкой на детали по нему, при нажалии переход в раздел кейсы на страницу кейса
+                </div>
+            </div>
+            <div class="cases__down">
+                <div class="cases__down__header">Наши юристы</div>
+                <div class="cases__down__list">
+                    <div class="cases__down__checklist">Фото и краткая инфа по юристу + кнопка обратиться к юристу</div>
+                    <div class="cases__down__checklist">Фото и краткая инфа по юристу + кнопка обратиться к юристу</div>
+                    <div class="cases__down__checklist">Фото и краткая инфа по юристу + кнопка обратиться к юристу</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
