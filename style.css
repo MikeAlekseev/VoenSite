@@ -235,10 +235,11 @@ tr:nth-child(even) {
 .feadback__list{
     display: flex;
     /*border: 1px solid black;*/
-    max-width: 75%;
+    max-width: 40%;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 15%;
+    /*margin: 0 50px;*/
+    /*gap: 15%;*/
 }
 .feadback__checklist{
     max-width: 300px;
