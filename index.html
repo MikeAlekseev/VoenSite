@@ -47,7 +47,7 @@
                 </div>
                 <div class="help__down__right">
                     <h3 class="help__down__right__header">Есть вопросы? Оставьте заявку:</h3>
-                    <form class="cons__form" action="/submit" method="post">
+                    <form class="cons__form" action="send.php" method="post">
                         <label for="phone">Введите номер телефона:</label>
                         <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
                         <button type="submit">Получить консультацию юриста</button>
@@ -131,8 +131,13 @@
                 Отзывы о консультациях ВПБ "Юстиция"
             </h3>
             <div class="feadback__list">
-                <div class="feadback__checklist">Отзывы, оставленные на сайте, слайдер влево-вправо</div>
-
+<!--                <div class="feadback__checklist">Отзывы, оставленные на сайте, слайдер влево-вправо</div>-->
+                <img class="feadback__checklist" src="img/отзыв1.jpg" alt="от1">
+                <img class="feadback__checklist" src="img/отзыв2.jpg" alt="от2">
+                <img class="feadback__checklist" src="img/отзыв3.jpg" alt="от3">
+                <img class="feadback__checklist" src="img/отзыв4.jpg" alt="от4">
+                <img class="feadback__checklist" src="img/отзыв5.jpg" alt="от5">
+                <img class="feadback__checklist" src="img/отзыв6.jpg" alt="от6">
             </div>
             <div class="feadback__stage">
                 <h3 class="feadback__stage__header">Этапы работ</h3>
@@ -181,7 +186,7 @@
                         <td>12</td>
                     </tr>
                     <tr>
-                        <td><u>Себестоимость такого набора услуг</u></td>
+                        <td>Себестоимость такого набора услуг</td>
                         <td>27000</td>
                         <td>54000</td>
                         <td>162000</td>
@@ -217,7 +222,20 @@
             <div class="cases__down">
                 <h3 class="cases__down__header">Наши юристы</h3>
                 <div class="cases__down__list">
-                    <div class="cases__down__checklist">Фото и краткая инфа по юристу + кнопка обратиться к юристу</div>
+                    <div class="cases__down__checklist">
+                        <div class="cases__down__checklist__data">
+                            <img class="cases__down__checklist__photo" src="img/yur1.jpg" alt="ur1"></img>
+                            <div class="cases__down__checklist__text">
+                                <b> Полковник юстиции (запаса) Харьковский Станислав Геннадьевич </b> <br>
+                                ✔️С 2016 года адвокат Адвокатской палаты Ленинградской области.<br>
+                                ✔️до 2016 г. проходил действительную военную службу на различных должностях в военных прокуратурах окружного и гарнизонного звена<br>
+                                ✔️являлся военным прокурором 4-х военных прокуратур гарнизонов.<br>
+                                ✔️окончил в 1983 г. Военно-юридический факультет Военного Краснознаменного института МО РФ<br>
+                                ✔️Специализируется в основном на защите по уголовным делам.
+                            </div>
+                        </div>
+                        <button class="cases__down__checklist__btn">Написать Юристу</button>
+                    </div>
                     <div class="cases__down__checklist">Фото и краткая инфа по юристу + кнопка обратиться к юристу</div>
                 </div>
             </div>
@@ -231,13 +249,21 @@
                 mail@iusticia.ru <br>
                 t.me/vpbust
             </div>
-            <div class="help__down__right">
-                <h3 class="help__down__right__header">Есть вопросы? Оставьте заявку:</h3>
-                <form class="cons__form" action="/submit" method="post">
-                    <label for="phone">Введите номер телефона:</label>
-                    <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
-                    <button type="submit">Получить консультацию юриста</button>
-                </form>
+<!--            <div class="help__down__right">-->
+<!--                <h3 class="help__down__right__header">Есть вопросы? Оставьте заявку:</h3>-->
+<!--                <form class="cons__form" action="/submit" method="post">-->
+<!--                    <label for="phone">Введите номер телефона:</label>-->
+<!--                    <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>-->
+<!--                    <button type="submit">Получить консультацию юриста</button>-->
+<!--                </form>-->
+<!--            </div>-->
+            <div class="footer__map">
+                <iframe
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3Adde35808e8071b3d5af89226029951ab2d04e82afcc1688ceb6e5f75b8cfc311&amp;source=constructor"
+                        width="300"
+                        height="200"
+                        frameborder="0">
+                </iframe>
             </div>
         </div>
     </div>
