@@ -40,15 +40,15 @@ li {
     align-items: center;
     padding: 10px 20px;
 }
-.adress{
+.adress__up{
     /*border: 1px solid black;*/
     padding: 10px 20px;
-    color: white;
+    /*color: white;*/
 }
-.vizitka{
+.vizitka__up{
     /*border: 1px solid black;*/
     padding: 10px 20px;
-    color: white;
+    /*color: white;*/
 }
 .header__down{
     /*margin-top: 20px;*/
@@ -342,3 +342,7 @@ tr:nth-child(even) {
     align-items: center;
     background-image: url(img/fonthead.jpg);
 }
+.vizitka__down{
+    /*border: 1px solid black;*/
+    padding: 10px 20px;
+color: white;
