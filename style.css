@@ -27,7 +27,7 @@ li {
 .header__up{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 10px 20px;
     /*background-image: url(img/fonthead.jpg);*/
 }
@@ -58,7 +58,7 @@ li {
     align-items: center;
     justify-content: space-around;
     padding: 10px 20px;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     background-image: url(img/fonthead.jpg);
 
 }
@@ -220,12 +220,11 @@ tr:nth-child(even) {
 .service__list{
     width: 300px;
     height: 400px;
-    border: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin: 20px 0;
-
+    flex-direction: column;
 }
 .feedback{
     display: flex;
