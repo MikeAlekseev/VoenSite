@@ -108,7 +108,7 @@ export default function RootLayout({
                         frameBorder="0">
                     </iframe>
                 </div>
-                <Link href="/cofidential">Политика конфиденциальности</Link>
+                <Link href="/cofidential">Политика конфиденциальности.</Link>
             </div>
         </div>
 
