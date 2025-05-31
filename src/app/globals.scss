@@ -30,6 +30,7 @@ li {
   justify-content: space-around;
   padding: 10px 20px;
   /*background-image: url(img/fonthead.jpg);*/
+  height: 150px;
 }
 
 .logo{
@@ -39,6 +40,9 @@ li {
   display: flex;
   align-items: center;
   padding: 10px 20px;
+}
+.main_logo{
+  max-width: 250px;
 }
 .adress__up{
   /*border: 1px solid black;*/

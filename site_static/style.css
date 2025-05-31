@@ -40,6 +40,9 @@ li {
     align-items: center;
     padding: 10px 20px;
 }
+.main_logo{
+    width: 200px;
+}
 .adress__up{
     /*border: 1px solid black;*/
     padding: 10px 20px;

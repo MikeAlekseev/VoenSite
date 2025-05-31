@@ -1,0 +1,7 @@
+.policy{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    padding: 20px 100px;
+}

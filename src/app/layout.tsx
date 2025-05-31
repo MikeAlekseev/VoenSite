@@ -32,7 +32,7 @@ export default function RootLayout({
                 <div className="header__up">
                     <div className="logo">
                         <Link href="/">
-                            <img src="/img/logo.png" alt="logo"/>
+                            <img className="main_logo" src="/img/logo.png" alt="logo"/>
                         </Link>
                     </div>
                     <div className="telegram">
@@ -93,7 +93,7 @@ export default function RootLayout({
 
             <div className="footer">
                 <div className="logo">
-                    <img src="/img/logo.png" alt="logo"/>
+                    <img className="main_logo" src="/img/logo.png" alt="logo"/>
                 </div>
                 <div className="vizitka__down">
                     <i className="bi bi-telephone-fill"></i> +79102210010 <br/>
