@@ -6,12 +6,12 @@ export default function Home() {
         <div className="main">
           <h2 className="main__header">С нами работают военнослужащие:</h2>
           <div className="main__list">
-            <img className="main__checklist" src="/img/mo_rf.jpg" alt="mo_rf"/>
-            <img className="main__checklist" src="/img/fsbrf.jpg" alt="fsb"/>
-            <img className="main__checklist" src="/img/sk_rf.jpg" alt="sk"/>
-            <img className="main__checklist" src="/img/mcs_rf.jpg" alt="mcs"/>
-            <img className="main__checklist" src="/img/mvd_rf.jpg" alt="mvd"/>
-            <img className="main__checklist" src="/img/rosgv.jpg" alt="rosgv"/>
+            <image className="main__checklist" src="/img/mo_rf.jpg" alt="mo_rf"/>
+            <image className="main__checklist" src="/img/fsbrf.jpg" alt="fsb"/>
+            <image className="main__checklist" src="/img/sk_rf.jpg" alt="sk"/>
+            <image className="main__checklist" src="/img/mcs_rf.jpg" alt="mcs"/>
+            <image className="main__checklist" src="/img/mvd_rf.jpg" alt="mvd"/>
+            <image className="main__checklist" src="/img/rosgv.jpg" alt="rosgv"/>
           </div>
           <div className="main__content">
             <h2 className="main__content__header">Бесплатная консультация военного юриста</h2>
@@ -100,12 +100,12 @@ export default function Home() {
             Отзывы о консультациях ВПБ &ldquo;Юстиция&rdquo;
           </h2>
           <div className="feadback__list">
-            <img className="feadback__checklist" src="/img/отзыв1.jpg" alt="от1"/>
-            <img className="feadback__checklist" src="/img/отзыв2.jpg" alt="от2"/>
-            <img className="feadback__checklist" src="/img/отзыв3.jpg" alt="от3"/>
-            <img className="feadback__checklist" src="/img/отзыв4.jpg" alt="от4"/>
-            <img className="feadback__checklist" src="/img/отзыв5.jpg" alt="от5"/>
-            <img className="feadback__checklist" src="/img/отзыв6.jpg" alt="от6"/>
+            <image className="feadback__checklist" src="/img/отзыв1.jpg" alt="от1"/>
+            <image className="feadback__checklist" src="/img/отзыв2.jpg" alt="от2"/>
+            <image className="feadback__checklist" src="/img/отзыв3.jpg" alt="от3"/>
+            <image className="feadback__checklist" src="/img/отзыв4.jpg" alt="от4"/>
+            <image className="feadback__checklist" src="/img/отзыв5.jpg" alt="от5"/>
+            <image className="feadback__checklist" src="/img/отзыв6.jpg" alt="от6"/>
           </div>
           <div className="feadback__stage">
             <h2 className="feadback__stage__header">Этапы работ</h2>
@@ -178,9 +178,9 @@ export default function Home() {
                 </tr>
                 <tr>
                   <td></td>
-                  <td><a href="#" className="button">Оформить подписку</a></td>
-                  <td><a href="#" className="button">Оформить подписку</a></td>
-                  <td><a href="#" className="button">Оформить подписку</a></td>
+                  <td><a href="#" className="link__black"><b>Оформить подписку</b></a></td>
+                  <td><a href="#" className="link__black"><b>Оформить подписку</b></a></td>
+                  <td><a href="#" className="link__black"><b>Оформить подписку</b></a></td>
                 </tr>
               </tbody>
             </table>

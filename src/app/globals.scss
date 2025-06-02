@@ -11,7 +11,13 @@ body {
 }
 a {
   text-decoration: none;
-  color: white;
+  //color: white;
+}
+.link__black{
+  color: black !important;
+}
+.link__white{
+  color: white !important;
 }
 li {
   list-style-type: none;

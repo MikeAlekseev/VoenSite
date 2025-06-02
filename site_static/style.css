@@ -43,6 +43,9 @@ li {
 .main_logo{
     width: 200px;
 }
+.telegram{
+    color: #1a1a1a;
+}
 .adress__up{
     /*border: 1px solid black;*/
     padding: 10px 20px;
@@ -56,6 +59,7 @@ li {
 .header__down{
     /*margin-top: 20px;*/
 }
+
 .nav{
     display: flex;
     align-items: center;

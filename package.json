@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.6",
+    "bootstrap-icons": "^1.13.1",
     "next": "15.3.2",
     "nodemailer": "^7.0.3",
     "nodemailer-html-to-text": "^3.2.0",

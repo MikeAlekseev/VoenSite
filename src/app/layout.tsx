@@ -3,6 +3,8 @@ import Script from 'next/script'
 import Link from 'next/link'
 import {Geist, Geist_Mono} from "next/font/google";
 import "./globals.scss";
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -36,33 +38,35 @@ export default function RootLayout({
                         </Link>
                     </div>
                     <div className="telegram">
-                        <i className="bi bi-telegram"></i> <a href="https://t.me/vpbust">Написать в Телеграм</a>
+                        <Link href="https://t.me/vpbust" className="link__black">
+                            <i className="bi bi-telegram"></i> Написать в Телеграм
+                        </Link>
                     </div>
-                    <div className="mail">
+                    <div className="mail" className="link__black">
                         <i className="bi bi-envelope-at-fill"></i> mail@iusticia.ru
                     </div>
-                    <div className="phone">
+                    <div className="phone" className="link__black">
                         <i className="bi bi-telephone-fill"></i> +79102210010
                     </div>
                 </div>
                 <div className="header__down">
                     <ul className="nav">
-                        <a href="#">
+                        <a href="#" className="link__white">
                             <li>Консультация Юриста</li>
                         </a>
-                        <a href="#">
+                        <a href="#" className="link__white">
                             <li>Выплаты ранение</li>
                         </a>
-                        <a href="#">
+                        <a href="#" className="link__white">
                             <li>Выплаты гибель</li>
                         </a>
-                        <a href="#">
+                        <a href="#" className="link__white">
                             <li>Безвести провавший</li>
                         </a>
-                        <a href="#">
+                        <a href="#" className="link__white">
                             <li>Отзывы</li>
                         </a>
-                        <a href="#">
+                        <a href="#" className="link__white">
                             <li>О компании</li>
                         </a>
                     </ul>
@@ -108,11 +112,12 @@ export default function RootLayout({
                         frameBorder="0">
                     </iframe>
                 </div>
-                <Link href="/cofidential">Политика конфиденциальности.</Link>
+                <Link href="/cofidential" className="link__white">Политика конфиденциальности.</Link>
             </div>
         </div>
 
-        <Script src="https://widget.gravi.org/code/index.js" data-grv-id="1576" data-grv-key="10ot0h4nilmav52nuy" async/>
+        <Script src="https://widget.gravi.org/code/index.js" data-grv-id="1576" data-grv-key="10ot0h4nilmav52nuy"
+                async/>
 
         </body>
         </html>
