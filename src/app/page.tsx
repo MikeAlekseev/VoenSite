@@ -82,15 +82,15 @@ export default function Home() {
           <h2 className="service__header">Услуги военного юриста</h2>
           <div className="services">
             <div className="service__list">
-              <img src="/img/ran_itog.png" alt="ran__itog"/>
+              <image src="/img/ran_itog.png" alt="ran__itog"/>
               <p><b>Выплаты по ранению</b></p>
             </div>
             <div className="service__list">
-              <img src="/img/gibel.jpg" alt="gibel"/>
+              <image src="/img/gibel.jpg" alt="gibel"/>
               <p><b>Выплаты по гибели</b></p>
             </div>
             <div className="service__list">
-              <img src="/img/bezvesti_itog.png" alt="bezvesti__itog"/>
+              <image src="/img/bezvesti_itog.png" alt="bezvesti__itog"/>
               <p><b>Безвести пропавшие СВО</b></p>
             </div>
           </div>

@@ -42,10 +42,10 @@ export default function RootLayout({
                             <i className="bi bi-telegram"></i> Написать в Телеграм
                         </Link>
                     </div>
-                    <div className="mail" className="link__black">
+                    <div className="mail link__black">
                         <i className="bi bi-envelope-at-fill"></i> mail@iusticia.ru
                     </div>
-                    <div className="phone" className="link__black">
+                    <div className="phone link__black">
                         <i className="bi bi-telephone-fill"></i> +79102210010
                     </div>
                 </div>
