@@ -34,6 +34,7 @@ export default function RootLayout({
                 <div className="header__up">
                     <div className="logo">
                         <Link href="/">
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
                             <img className="main_logo" src="/img/logo.png" alt="logo"/>
                         </Link>
                     </div>

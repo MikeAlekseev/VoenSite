@@ -1,17 +1,24 @@
 import { sendMail } from '@/lib/send-mail';
 
 export default function Home() {
+
   return (
       <>
         <div className="main">
           <h2 className="main__header">С нами работают военнослужащие:</h2>
           <div className="main__list">
-            <image className="main__checklist" src="/img/mo_rf.jpg" alt="mo_rf"/>
-            <image className="main__checklist" src="/img/fsbrf.jpg" alt="fsb"/>
-            <image className="main__checklist" src="/img/sk_rf.jpg" alt="sk"/>
-            <image className="main__checklist" src="/img/mcs_rf.jpg" alt="mcs"/>
-            <image className="main__checklist" src="/img/mvd_rf.jpg" alt="mvd"/>
-            <image className="main__checklist" src="/img/rosgv.jpg" alt="rosgv"/>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img className="main__checklist" src="/img/mo_rf.jpg" alt="mo_rf"/>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img className="main__checklist" src="/img/fsbrf.jpg" alt="fsb"/>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img className="main__checklist" src="/img/sk_rf.jpg" alt="sk"/>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img className="main__checklist" src="/img/mcs_rf.jpg" alt="mcs"/>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img className="main__checklist" src="/img/mvd_rf.jpg" alt="mvd"/>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img className="main__checklist" src="/img/rosgv.jpg" alt="rosgv"/>
           </div>
           <div className="main__content">
             <h2 className="main__content__header">Бесплатная консультация военного юриста</h2>
@@ -82,15 +89,18 @@ export default function Home() {
           <h2 className="service__header">Услуги военного юриста</h2>
           <div className="services">
             <div className="service__list">
-              <image src="/img/ran_itog.png" alt="ran__itog"/>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/img/ran_itog.png" alt="ran__itog"/>
               <p><b>Выплаты по ранению</b></p>
             </div>
             <div className="service__list">
-              <image src="/img/gibel.jpg" alt="gibel"/>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/img/gibel.jpg" alt="gibel"/>
               <p><b>Выплаты по гибели</b></p>
             </div>
             <div className="service__list">
-              <image src="/img/bezvesti_itog.png" alt="bezvesti__itog"/>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/img/bezvesti_itog.png" alt="bezvesti__itog"/>
               <p><b>Безвести пропавшие СВО</b></p>
             </div>
           </div>
@@ -100,12 +110,18 @@ export default function Home() {
             Отзывы о консультациях ВПБ &ldquo;Юстиция&rdquo;
           </h2>
           <div className="feadback__list">
-            <image className="feadback__checklist" src="/img/отзыв1.jpg" alt="от1"/>
-            <image className="feadback__checklist" src="/img/отзыв2.jpg" alt="от2"/>
-            <image className="feadback__checklist" src="/img/отзыв3.jpg" alt="от3"/>
-            <image className="feadback__checklist" src="/img/отзыв4.jpg" alt="от4"/>
-            <image className="feadback__checklist" src="/img/отзыв5.jpg" alt="от5"/>
-            <image className="feadback__checklist" src="/img/отзыв6.jpg" alt="от6"/>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img className="feadback__checklist" src="/img/отзыв1.jpg" alt="от1"/>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img className="feadback__checklist" src="/img/отзыв2.jpg" alt="от2"/>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img className="feadback__checklist" src="/img/отзыв3.jpg" alt="от3"/>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img className="feadback__checklist" src="/img/отзыв4.jpg" alt="от4"/>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img className="feadback__checklist" src="/img/отзыв5.jpg" alt="от5"/>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img className="feadback__checklist" src="/img/отзыв6.jpg" alt="от6"/>
           </div>
           <div className="feadback__stage">
             <h2 className="feadback__stage__header">Этапы работ</h2>
