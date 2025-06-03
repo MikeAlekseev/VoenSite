@@ -205,8 +205,7 @@ export default function Home() {
         <div className="cases">
           <div className="cases__down">
             <h2 className="cases__down__header">Наши юристы</h2>
-            <div className="cases__down__list">
-              <div className="cases__down__checklist">
+            <div className="cases__down__list"><div className="cases__down__checklist">
                 <div className="cases__down__checklist__data">
                   <img className="cases__down__checklist__photo" src="/img/yur1.jpg" alt="ur1"></img>
                   <div className="cases__down__checklist__text">

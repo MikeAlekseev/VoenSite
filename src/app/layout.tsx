@@ -55,12 +55,12 @@ export default function RootLayout({
                         <a href="#" className="link__white">
                             <li>Консультация Юриста</li>
                         </a>
-                        <a href="#" className="link__white">
+                        <Link href="/ranenie" className="link__white">
                             <li>Выплаты ранение</li>
-                        </a>
-                        <a href="#" className="link__white">
+                        </Link>
+                        <Link href="/gibel" className="link__white">
                             <li>Выплаты гибель</li>
-                        </a>
+                        </Link>
                         <a href="#" className="link__white">
                             <li>Безвести провавший</li>
                         </a>
