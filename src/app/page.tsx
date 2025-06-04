@@ -205,8 +205,10 @@ export default function Home() {
         <div className="cases">
           <div className="cases__down">
             <h2 className="cases__down__header">Наши юристы</h2>
-            <div className="cases__down__list"><div className="cases__down__checklist">
+            <div className="cases__down__list">
+              <div className="cases__down__checklist">
                 <div className="cases__down__checklist__data">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img className="cases__down__checklist__photo" src="/img/yur1.jpg" alt="ur1"></img>
                   <div className="cases__down__checklist__text">
                     <b> Полковник юстиции (запаса) Харьковский Станислав Геннадьевич </b> <br/>
@@ -220,7 +222,24 @@ export default function Home() {
                 </div>
                 <button className="cases__down__checklist__btn">Написать Юристу</button>
               </div>
-              <div className="cases__down__checklist">Фото и краткая инфа по юристу + кнопка обратиться к юристу</div>
+              <div className="cases__down__checklist">
+                <div className="cases__down__checklist__data">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img className="cases__down__checklist__photo" src="/img/max.jpg" alt="ur1"></img>
+                  <div className="cases__down__checklist__text">
+                      <b>Максимом Гришечко юрист с 18-летним стажем</b><br/>
+                      ✔️Действенно и эффективно применяет на практике значительный опыт нашей юридической команды.<br/>
+                      ✔️Успешный опыт судебных споров.<br/>
+                      <br/><br/>
+                      В своей практике Максим занимается:<br/>
+                      ⭕️Консультированием по правовым вопросам, касающимся военной службы.<br/>
+                      ⭕️Защитой прав военнослужащих в суде и других инстанциях.<br/>
+                      ⭕️Помощью в оформлении и реализации выплат и компенсаций военнослужащим и их семьям.<br/>
+                      💬 Моя основная задача — обеспечивать защиту прав военнослужащих и их семей, а также помогать в решении правовых вопросов, связанных с военной службой.<br/>
+                  </div>
+                </div>
+                <button className="cases__down__checklist__btn">Написать Юристу</button>
+              </div>
             </div>
           </div>
         </div>
