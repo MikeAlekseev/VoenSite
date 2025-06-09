@@ -1,5 +1,5 @@
 'use client'
-import {useState, useCallback} from "react";
+import {useState, useCallback, FormEventHandler} from "react";
 import {clsx} from "clsx";
 
 import {sendMail} from '@/lib/send-mail';
@@ -31,7 +31,7 @@ export const AskQuestion = ({showMessageInput, wrapperClassName}: AskQuestionPro
 
         const formEl = e.target as HTMLFormElement
         const formData = new FormData(formEl)
-        const formRawValues = Object.fromEntries(formData)
+        const formRawValues = Object.fromEntries(formData) as { phone: string, question: string };
 
         clearTimeout(messageTimer)
         setMessageTimer(0)
@@ -47,13 +47,13 @@ export const AskQuestion = ({showMessageInput, wrapperClassName}: AskQuestionPro
             setPhone('')
             setPhoneError(validateMessage(''))
 
-            const timer = setTimeout(() => {
+            const timer = (setTimeout(() => {
                 setMessageTimer(0)
-            }, 10 * 1000)
+            }, 10 * 1000)) as unknown as number
             setMessageTimer(timer)
         } catch (error) {
             setFormState('error')
-            setFormError(error.message)
+            setFormError((error as { message: string }).message)
         }
     }, [messageError, phoneError, messageTimer])
 
@@ -108,8 +108,10 @@ export const AskQuestion = ({showMessageInput, wrapperClassName}: AskQuestionPro
                 <button
                     type="submit"
                     disabled={
-                        formState === 'submitting' ||
-                        formState === 'error' && (formError || phoneError || messageError)
+                        Boolean(
+                            formState === 'submitting' ||
+                            formState === 'error' && (formError || phoneError || messageError)
+                        )
                     }
                 >
                     Отправить
