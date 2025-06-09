@@ -1,7 +1,6 @@
 .ranenie{
-    display: flex;
     flex-direction: column;
-    align-items: stretch;
-    /*align-items: center;*/
-    padding: 20px 100px;
+    padding: 20px 500px;
+    display: flex;
+    align-items: center;
 }
