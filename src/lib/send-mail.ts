@@ -43,7 +43,7 @@ export async function sendMail(phone: string, message: string) {
         await transporter.sendMail({
             to: sendTo,
             subject: subject,
-            text: `Телефон: ${cleanedPhone}\n\n${message}`,
+            text: `Телефон: ${cleanedPhone}\n\n${message || ''}`,
         });
     } catch {
         throw new Error('Прием обращений временно недоступен. Попробуйте написать в telegram');
