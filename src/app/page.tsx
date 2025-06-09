@@ -1,7 +1,6 @@
-import { sendMail } from '@/lib/send-mail';
+import { AskQuestion } from './AskQuestion'
 
 export default function Home() {
-
   return (
       <>
         <div className="main">
@@ -69,20 +68,7 @@ export default function Home() {
               </table>
             </div>
 
-            <div className="main__content__form">
-              <h2 className="main__content__form__header">Есть вопрос? Задайте его: </h2>
-              <form className="cons__form" action="/submit" method="post">
-                <label htmlFor="question">Ваш вопрос:</label>
-                <textarea id="question" name="question" rows={4} required/>
-
-                <label htmlFor="phone">Номер телефона:</label>
-                <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required
-                       pattern="^\+7\s?\(?\d{3}\)?[\s-]?\d{3}[\s-]?\d{2}[\s-]?\d{2}$"/>
-
-                <button type="submit">Отправить</button>
-                <button type="button" onClick={sendMail}>email</button>
-              </form>
-            </div>
+            <AskQuestion showMessageInput/>
           </div>
         </div>
         <div className="service">

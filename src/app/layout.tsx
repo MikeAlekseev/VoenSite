@@ -4,6 +4,7 @@ import Link from 'next/link'
 import {Geist, Geist_Mono} from "next/font/google";
 import "./globals.scss";
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import {AskQuestion} from "@/app/AskQuestion";
 
 
 const geistSans = Geist({
@@ -83,14 +84,7 @@ export default function RootLayout({
                         <div className="p">+ пакетное предложение для тех, у кого часто возникают вопросы</div>
                         <div className="p">+ низкие цены</div>
                     </div>
-                    <div className="help__down__right">
-                        <h3 className="help__down__right__header">Есть вопросы? Оставьте заявку:</h3>
-                        <form className="cons__form" action="send.php" method="post">
-                            <label htmlFor="phone">Введите номер телефона:</label>
-                            <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required/>
-                            <button type="submit">Получить консультацию юриста</button>
-                        </form>
-                    </div>
+                    <AskQuestion/>
                 </div>
             </div>
             <div className="main">
