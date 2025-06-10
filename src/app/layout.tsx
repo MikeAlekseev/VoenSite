@@ -79,10 +79,11 @@ export default function RootLayout({
                 <div className="help__down">
                     <div className="help__down__left">
                         <h3 className="help__down__left__header">Юридическая защита военнослужащих и их семей</h3>
-                        <div className="p">+ консультируют юристы, проходившие службу в органах военной юстиции</div>
-                        <div className="p">+ тщательная подготовка к консультации, углубленная работа с клиентом</div>
-                        <div className="p">+ пакетное предложение для тех, у кого часто возникают вопросы</div>
-                        <div className="p">+ низкие цены</div>
+                        <br/><br/>
+                        <div className="p"><b>+</b> консультируют юристы, проходившие службу в органах военной юстиции</div>
+                        <div className="p"><b>+</b> тщательная подготовка к консультации, углубленная работа с клиентом</div>
+                        <div className="p"><b>+</b> пакетное предложение для тех, у кого часто возникают вопросы</div>
+                        <div className="p"><b>+</b> низкие цены</div>
                     </div>
                     <AskQuestion/>
                 </div>

@@ -4,21 +4,6 @@ export default function Home() {
   return (
       <>
         <div className="main">
-          {/*<h2 className="main__header">С нами работают военнослужащие:</h2>*/}
-          {/*<div className="main__list">*/}
-          {/*  /!* eslint-disable-next-line @next/next/no-img-element *!/*/}
-          {/*  <img className="main__checklist" src="/img/mo_rf.jpg" alt="mo_rf"/>*/}
-          {/*  /!* eslint-disable-next-line @next/next/no-img-element *!/*/}
-          {/*  <img className="main__checklist" src="/img/fsbrf.jpg" alt="fsb"/>*/}
-          {/*  /!* eslint-disable-next-line @next/next/no-img-element *!/*/}
-          {/*  <img className="main__checklist" src="/img/sk_rf.jpg" alt="sk"/>*/}
-          {/*  /!* eslint-disable-next-line @next/next/no-img-element *!/*/}
-          {/*  <img className="main__checklist" src="/img/mcs_rf.jpg" alt="mcs"/>*/}
-          {/*  /!* eslint-disable-next-line @next/next/no-img-element *!/*/}
-          {/*  <img className="main__checklist" src="/img/mvd_rf.jpg" alt="mvd"/>*/}
-          {/*  /!* eslint-disable-next-line @next/next/no-img-element *!/*/}
-          {/*  <img className="main__checklist" src="/img/rosgv.jpg" alt="rosgv"/>*/}
-          {/*</div>*/}
           <div className="main__content">
             <h2 className="main__content__header">Бесплатная консультация военного юриста</h2>
             <div className="main__content__list">
@@ -137,47 +122,47 @@ export default function Home() {
                   <td>+</td>
                 </tr>
                 <tr>
-                  <td>Текстовых ответов на вопросы (в зависимости от сложности)</td>
-                  <td>до 10</td>
-                  <td>до 20</td>
-                  <td>до 50</td>
+                  <td>Количество вопросов к юристу (в зависимости от сложности)</td>
+                  <td>до 8</td>
+                  <td>до 16</td>
+                  <td>до 30</td>
                 </tr>
                 <tr>
-                  <td>Голосовые консультации юриста</td>
+                  <td>Консультации юриста по телефону</td>
                   <td>2</td>
                   <td>4</td>
-                  <td>12</td>
+                  <td>6</td>
                 </tr>
                 <tr>
                   <td>Время обработки запроса, часов</td>
                   <td>До 8</td>
-                  <td>До 5</td>
-                  <td>До 2 (в рабочее время)</td>
+                  <td>До 6</td>
+                  <td>До 4 (в рабочее время)</td>
                 </tr>
                 <tr>
                   <td>Оформление запросов в органы / структуры</td>
                   <td>2</td>
                   <td>4</td>
-                  <td>12</td>
+                  <td>6</td>
                 </tr>
-                <tr>
-                  <td>Себестоимость такого набора услуг</td>
-                  <td>27000</td>
-                  <td>54000</td>
-                  <td>162000</td>
-                </tr>
-                <tr>
-                  <td>Размер скидки</td>
-                  <td>-25%</td>
-                  <td>-30%</td>
-                  <td>-40%</td>
-                </tr>
-                <tr>
-                  <td>Цена в месяц для клиента:</td>
-                  <td>20250 р/мес</td>
-                  <td>37800 р/мес</td>
-                  <td>97200 р/мес</td>
-                </tr>
+                {/*<tr>*/}
+                {/*  <td>Себестоимость такого набора услуг</td>*/}
+                {/*  <td>27000</td>*/}
+                {/*  <td>54000</td>*/}
+                {/*  <td>162000</td>*/}
+                {/*</tr>*/}
+                {/*<tr>*/}
+                {/*  <td>Размер скидки</td>*/}
+                {/*  <td>-25%</td>*/}
+                {/*  <td>-30%</td>*/}
+                {/*  <td>-40%</td>*/}
+                {/*</tr>*/}
+                {/*<tr>*/}
+                {/*  <td>Цена в месяц для клиента:</td>*/}
+                {/*  <td>20250 р/мес</td>*/}
+                {/*  <td>37800 р/мес</td>*/}
+                {/*  <td>97200 р/мес</td>*/}
+                {/*</tr>*/}
                 <tr>
                   <td></td>
                   <td><a href="#" className="link__black"><b>Оформить подписку</b></a></td>
