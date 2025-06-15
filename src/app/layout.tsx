@@ -53,9 +53,9 @@ export default function RootLayout({
                 </div>
                 <div className="header__down">
                     <ul className="nav">
-                        <a href="#" className="link__white">
+                        <Link href="/" className="link__white">
                             <li>Консультация Юриста</li>
-                        </a>
+                        </Link>
                         <Link href="/ranenie" className="link__white">
                             <li>Выплаты ранение</li>
                         </Link>
@@ -78,8 +78,8 @@ export default function RootLayout({
                 <h1 className="help__up">Консультация военного юриста</h1>
                 <div className="help__down">
                     <div className="help__down__left">
-                        <h3 className="help__down__left__header">Юридическая защита военнослужащих и их семей</h3>
-                        <br/><br/>
+                        <h2 className="help__down__left__header">Юридическая защита военнослужащих и их семей</h2>
+
                         <div className="p"><b>+</b> консультируют юристы, проходившие службу в органах военной юстиции</div>
                         <div className="p"><b>+</b> тщательная подготовка к консультации, углубленная работа с клиентом</div>
                         <div className="p"><b>+</b> пакетное предложение для тех, у кого часто возникают вопросы</div>
@@ -114,8 +114,12 @@ export default function RootLayout({
                 </div>
                 <div className="vizitka__down">
                     <i className="bi bi-telephone-fill"></i> +79102210010 <br/>
+                    <br/><br/>
                     <i className="bi bi-envelope-at-fill"></i> mail@iusticia.ru <br/>
-                    <i className="bi bi-telegram"></i> t.me/vpbust
+                    <br/><br/>
+                    <i className="bi bi-telegram"></i> t.me/vpbust <br/>
+                    <br/><br/>
+                    <Link href="/cofidential" className="link__white">Политика конфиденциальности.</Link>
                 </div>
                 <div className="footer__map">
                     <iframe
@@ -125,7 +129,6 @@ export default function RootLayout({
                         frameBorder="0">
                     </iframe>
                 </div>
-                <Link href="/cofidential" className="link__white">Политика конфиденциальности.</Link>
             </div>
         </div>
 

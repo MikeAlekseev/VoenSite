@@ -114,7 +114,7 @@ export const AskQuestion = ({showMessageInput, wrapperClassName}: AskQuestionPro
                         )
                     }
                 >
-                    Отправить
+                    ЗАДАТЬ ВОПРОС ЮРИСТУ
                 </button>
                 {
                     formError && <p style={{color: 'red'}}>{formError}</p>

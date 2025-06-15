@@ -5,7 +5,9 @@
 }
 body {
   outline: none;
-  font-family: Arial, sans-serif;
+  font-family: Montserrat Alternates, sans-serif;
+  line-height: 1.5;
+  font-size: 14px;
   /*padding: 30px;*/
   /*background-color: #f9f9f9;*/
 }
@@ -70,6 +72,9 @@ li {
   padding: 10px 20px;
   /*border: 1px solid black;*/
   background-image: url(img/fonthead.jpg);
+  background-repeat: no-repeat;       /* убрать повторы */
+  background-size: cover;             /* растянуть на весь блок */
+  background-position: center center; /* отцентрировать */
 
 }
 .help{
@@ -80,6 +85,9 @@ li {
   padding: 20px 20px 50px 20px;
   flex-direction: column;
   background-image: url(img/fonthead.jpg);
+  background-repeat: no-repeat;       /* убрать повторы */
+  background-size: cover;             /* растянуть на весь блок */
+  background-position: center center; /* отцентрировать */
   color: white;
 }
 .help__up{
@@ -101,6 +109,11 @@ li {
 .cons__form{
   display: flex;
   flex-direction: column;
+}
+button{
+  padding: 10px;
+  color: dodgerblue;
+  border-color: dodgerblue;
 }
 .main{
   /*background-color: beige;*/
@@ -320,13 +333,13 @@ tr:nth-child(even) {
 
 .cases__down__checklist{
   border: 1px solid #000;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 600px;
   margin: 20px 0;
-  display: flex;
   padding: 0 20px;
+  display: flex;
 }
 .cases__down__checklist__data{
   display: flex;
@@ -334,6 +347,9 @@ tr:nth-child(even) {
   margin: 20px 0;
   gap: 5%;
 
+}
+.cases__down__checklist__photos{
+    display: flex;
 }
 .cases__down__checklist__photo{
   max-width: 150px;
@@ -350,6 +366,9 @@ tr:nth-child(even) {
   border-top: 1px solid black;
   align-items: center;
   background-image: url(img/fonthead.jpg);
+  background-repeat: no-repeat;       /* убрать повторы */
+  background-size: cover;             /* растянуть на весь блок */
+  background-position: center center; /* отцентрировать */
 }
 .vizitka__down {
   /*border: 1px solid black;*/
@@ -504,4 +523,42 @@ tr:nth-child(even) {
     min-height: 0;
     overflow: visible;
   }
+}
+
+.card {
+  display: flex;
+  max-width: 700px;
+  background: #1f1f1f;
+  color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  padding: 20px;
+}
+
+.photo img {
+  width: 160px;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.info {
+  padding: 20px;
+  flex: 1;
+  border-right-color: white;
+}
+
+h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.position {
+  color: #f3ce3e;
+  margin-top: 8px;
+}
+.white__board{
+  border: 2px solid white;
 }
