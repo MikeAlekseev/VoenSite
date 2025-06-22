@@ -510,17 +510,17 @@ tr:nth-child(even) {
   padding: 10px 20px;
 }
 
-.nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
+//. {
+//  display: -webkit-box;
+//  display: -ms-flexbox;
+//  display: flex;
+//  -webkit-box-align: center;
+//  -ms-flex-align: centenavr;
+//  align-items: center;
+//  -webkit-box-pack: justify;
+//  -ms-flex-pack: justify;
+//  justify-content: space-between;
+//}
 @-moz-document url-prefix() {
   .feedback {
     min-height: 0;
