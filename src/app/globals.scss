@@ -251,6 +251,7 @@ tr:nth-child(even) {
   justify-content: space-around;
   margin: 20px 0;
   flex-direction: column;
+  color: #1a1a1a;
 }
 .feedback{
   display: flex;
@@ -572,4 +573,18 @@ h2 {
 }
 .white__board{
   border: 2px solid white;
+}
+.line{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-height: 20px;
+  margin-bottom: 5px;
+}
+
+.plus{
+  margin: 0 10px 0 0;
+}
+.plusText{
+  margin: 0;
 }
