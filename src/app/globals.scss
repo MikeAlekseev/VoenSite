@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
 }
@@ -113,8 +113,9 @@ li {
 }
 button{
   padding: 10px;
-  color: dodgerblue;
-  border-color: dodgerblue;
+  color: green;
+  border-color: green;
+  margin-top: 10px;
 }
 .main{
   /*background-color: beige;*/
@@ -330,35 +331,36 @@ tr:nth-child(even) {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  margin-bottom: 30px;
 }
 
-.cases__down__checklist{
-  border: 1px solid #000;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 600px;
-  margin: 20px 0;
-  padding: 0 20px;
-  display: flex;
-}
-.cases__down__checklist__data{
-  display: flex;
-  align-items: center;
-  margin: 20px 0;
-  gap: 5%;
-
-}
-.cases__down__checklist__photos{
-    display: flex;
-}
-.cases__down__checklist__photo{
-  max-width: 150px;
-}
-.cases__down__checklist__btn{
-  padding: 10px;
-  margin-bottom: 20px;
-}
+//.cases__down__checklist{
+//  border: 1px solid #000;
+//  flex-direction: row;
+//  justify-content: center;
+//  align-items: center;
+//  width: 600px;
+//  margin: 20px 0;
+//  padding: 0 20px;
+//  display: flex;
+//}
+//.cases__down__checklist__data{
+//  display: flex;
+//  align-items: center;
+//  margin: 20px 0;
+//  gap: 5%;
+//
+//}
+//.cases__down__checklist__photos{
+//    display: flex;
+//}
+//.cases__down__checklist__photo{
+//  max-width: 150px;
+//}
+//.cases__down__checklist__btn{
+//  padding: 10px;
+//  margin-bottom: 20px;
+//}
 .footer{
   display: flex;
   justify-content: space-between;
@@ -527,14 +529,16 @@ tr:nth-child(even) {
 }
 
 .card {
+  //margin: 0 auto;
   display: flex;
   max-width: 700px;
-  background: #1f1f1f;
+  //background: #1f1f1f;
   color: white;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  padding: 20px;
+  //padding: 20px;
+  background-image: url(./img/fon2.png);
 }
 
 .photo img {
@@ -543,11 +547,17 @@ tr:nth-child(even) {
   object-fit: cover;
   display: block;
 }
+.photo{
+  padding: 10px;
+  background-image: url(../../public/img/fon3.png);
+}
 
 .info {
   padding: 20px;
   flex: 1;
   border-right-color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+  max-height: 500px;
 }
 
 h2 {

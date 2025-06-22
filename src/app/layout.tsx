@@ -74,20 +74,20 @@ export default function RootLayout({
                     </ul>
                 </div>
             </div>
-            <div className="help">
-                <h1 className="help__up">Консультация военного юриста</h1>
-                <div className="help__down">
-                    <div className="help__down__left">
-                        <h2 className="help__down__left__header">Юридическая защита военнослужащих и их семей</h2>
+            {/*<div className="help">*/}
+            {/*    <h1 className="help__up">Консультация военного юриста</h1>*/}
+            {/*    <div className="help__down">*/}
+            {/*        <div className="help__down__left">*/}
+            {/*            <h2 className="help__down__left__header">Юридическая защита военнослужащих и их семей</h2>*/}
 
-                        <div className="p"><b>+</b> консультируют юристы, проходившие службу в органах военной юстиции</div>
-                        <div className="p"><b>+</b> тщательная подготовка к консультации, углубленная работа с клиентом</div>
-                        <div className="p"><b>+</b> пакетное предложение для тех, у кого часто возникают вопросы</div>
-                        <div className="p"><b>+</b> низкие цены</div>
-                    </div>
-                    <AskQuestion/>
-                </div>
-            </div>
+            {/*            <div className="p"><b>+</b> консультируют юристы, проходившие службу в органах военной юстиции</div>*/}
+            {/*            <div className="p"><b>+</b> тщательная подготовка к консультации, углубленная работа с клиентом</div>*/}
+            {/*            <div className="p"><b>+</b> пакетное предложение для тех, у кого часто возникают вопросы</div>*/}
+            {/*            <div className="p"><b>+</b> низкие цены</div>*/}
+            {/*        </div>*/}
+            {/*        <AskQuestion/>*/}
+            {/*    </div>*/}
+            {/*</div>*/}
             <div className="main">
                 <h2 className="main__header">С нами работают военнослужащие:</h2>
                 <div className="main__list">
