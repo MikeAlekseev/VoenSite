@@ -115,21 +115,21 @@ export default function Home() {
               <div className="service__list">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/img/ran_itog.png" alt="ran__itog"/>
-                <p><b>Выплаты по ранению</b></p>
+                <p className="service__text"><b>Выплаты по ранению</b></p>
               </div>
             </Link>
             <Link href="gibel">
               <div className="service__list">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/img/gibel.jpg" alt="gibel"/>
-                <p><b>Выплаты по гибели</b></p>
+                <p className="service__text"><b>Выплаты по гибели</b></p>
               </div>
             </Link>
             <Link href="/">
               <div className="service__list">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/img/bezvesti_itog.png" alt="bezvesti__itog"/>
-                <p><b>Безвести пропавшие СВО</b></p>
+                <p className="service__text"><b>Безвести пропавшие СВО</b></p>
               </div>
             </Link>
           </div>

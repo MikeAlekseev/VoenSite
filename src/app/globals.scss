@@ -244,14 +244,18 @@ tr:nth-child(even) {
   justify-content: space-evenly;
 }
 .service__list{
-  width: 300px;
-  height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin: 20px 0;
-  flex-direction: column;
   color: #1a1a1a;
+  border: 1px solid #1a1a1a;
+  border-radius:  0 0 10px 10px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 300px;
+  margin: 20px 0;
+  display: flex
+}
+.service__text{
+  margin: 20px 0;
 }
 .feedback{
   display: flex;
@@ -280,8 +284,8 @@ tr:nth-child(even) {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 20px 0;
-  margin-right: 10%;
+  margin: 20px 10% 0 0;
+  //margin-right: ;
 }
 .feadback__stage__header{
   margin: 30px 0;
