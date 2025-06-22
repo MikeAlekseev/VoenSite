@@ -5,8 +5,6 @@ import Link from "next/link";
 
 
 export default function Home() {
-  // @ts-ignore
-  // @ts-ignore
   return (
       <>
         <div className="help">
