@@ -1,8 +1,23 @@
-
-import {AskQuestion} from './AskQuestion'
 import Link from "next/link";
 
+import {Carousel, CarouselSlide} from "@/app/components/Carousel";
 
+import feedback1Img from './resources/feedback1.jpg'
+import feedback2Img from './resources/feedback2.jpg'
+import feedback3Img from './resources/feedback3.jpg'
+import feedback4Img from './resources/feedback4.jpg'
+import feedback5Img from './resources/feedback5.jpg'
+import feedback6Img from './resources/feedback6.jpg'
+import {AskQuestion} from './AskQuestion'
+
+const feedbackSlides: CarouselSlide[] = [
+  { id: '1', src: feedback1Img, alt: 'Отзыв' },
+  { id: '2', src: feedback2Img, alt: 'Отзыв' },
+  { id: '3', src: feedback3Img, alt: 'Отзыв' },
+  { id: '4', src: feedback4Img, alt: 'Отзыв' },
+  { id: '5', src: feedback5Img, alt: 'Отзыв' },
+  { id: '6', src: feedback6Img, alt: 'Отзыв' },
+]
 
 export default function Home() {
   return (
@@ -141,20 +156,7 @@ export default function Home() {
       <h2 className="feadback__header">
         Отзывы о консультациях ВПБ &ldquo;Юстиция&rdquo;
       </h2>
-      <div className="feadback__list">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img className="feadback__checklist" src="/img/отзыв1.jpg" alt="от1"/>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img className="feadback__checklist" src="/img/отзыв2.jpg" alt="от2"/>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img className="feadback__checklist" src="/img/отзыв3.jpg" alt="от3"/>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img className="feadback__checklist" src="/img/отзыв4.jpg" alt="от4"/>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img className="feadback__checklist" src="/img/отзыв5.jpg" alt="от5"/>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img className="feadback__checklist" src="/img/отзыв6.jpg" alt="от6"/>
-      </div>
+      <Carousel slides={feedbackSlides} width={300}/>
       <div className="feadback__stage">
         <h2 className="feadback__stage__header">Этапы работ</h2>
         <p>

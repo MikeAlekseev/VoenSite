@@ -1,7 +1,10 @@
 "use client"
 
-import Image, {StaticImageData} from "next/image";
+import { useMemo } from "react"
+import Image, {StaticImageData} from "next/image"
+import {EmblaOptionsType} from 'embla-carousel'
 import useEmblaCarousel from 'embla-carousel-react'
+import Autoplay from 'embla-carousel-autoplay'
 
 import { PrevButton, NextButton, usePrevNextButtons } from './ArrowButtons'
 import './Carousel.scss'
@@ -15,10 +18,17 @@ export interface CarouselSlide {
 export interface CarouselProps {
     width?: number
     slides: CarouselSlide[]
+    loop?: boolean
+    playOnInit?: boolean
+    delay?: number
 }
 
-export const Carousel = ({ slides, width = 200 }: CarouselProps) => {
-    const [emblaRef, emblaApi] = useEmblaCarousel()
+export const Carousel = ({ slides, width = 200, loop = true, playOnInit = true, delay = 3000 }: CarouselProps) => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    const options = useMemo<EmblaOptionsType>(() => ({ loop }), [])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    const plugins = useMemo(() => ([Autoplay({ playOnInit, delay })]), [])
+    const [emblaRef, emblaApi] = useEmblaCarousel(options, plugins)
 
     const {
         prevBtnDisabled,
