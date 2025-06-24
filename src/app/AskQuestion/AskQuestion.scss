@@ -1,0 +1,41 @@
+.askQuestionWrapper {
+  .main__content__form__header {
+    margin: 20px;
+    text-align: center;
+  }
+
+  .askQuestionForm {
+    position: relative;
+  }
+
+  #phone {
+    padding: 4px;
+    border-width: 1px;
+    width: 250px;
+  }
+
+  .askQuestionButton {
+    width: 250px;
+    //background: red !important;
+
+    &.askQuestionButtonActive {
+      cursor: pointer;
+    }
+
+    &.askQuestionButtonActive:hover {
+      //background: pink !important;
+    }
+  }
+
+  .askQuestionGoodMessage{
+    position: absolute;
+    top: 100%;
+    color: green;
+  }
+
+  &.askQuestionDarkMode {
+    .askQuestionGoodMessage {
+      color: white;
+    }
+  }
+}

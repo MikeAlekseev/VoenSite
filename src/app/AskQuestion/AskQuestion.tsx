@@ -4,14 +4,17 @@ import {clsx} from "clsx";
 
 import {sendMail} from '@/lib/send-mail';
 
+import './AskQuestion.scss'
+
 type FromState = 'init' | 'submitting' | 'error'
 
 interface AskQuestionProps {
     showMessageInput?: boolean;
     wrapperClassName?: string;
+    darkMode?: boolean;
 }
 
-export const AskQuestion = ({showMessageInput, wrapperClassName}: AskQuestionProps) => {
+export const AskQuestion = ({showMessageInput, wrapperClassName, darkMode}: AskQuestionProps) => {
     const [message, setMessage] = useState('');
     const [messageError, setMessageError] = useState(validateMessage(message));
     const [phone, setPhone] = useState('');
@@ -57,10 +60,15 @@ export const AskQuestion = ({showMessageInput, wrapperClassName}: AskQuestionPro
         }
     }, [messageError, phoneError, messageTimer])
 
+    const isButtonDisabled = Boolean(
+        formState === 'submitting' ||
+        formState === 'error' && (formError || phoneError || messageError)
+    )
+
     return (
-        <div className={clsx('main__content__form', wrapperClassName)}>
+        <div className={clsx('askQuestionWrapper main__content__form', { 'askQuestionDarkMode': darkMode }, wrapperClassName)}>
             <h2 className="main__content__form__header">Есть вопрос? Задайте его: </h2>
-            <form className="cons__form" action="/submit" method="post" onSubmit={submitHandler}>
+            <form className="askQuestionForm cons__form" action="/submit" method="post" onSubmit={submitHandler}>
                 {
                     showMessageInput && (
                         <>
@@ -107,21 +115,17 @@ export const AskQuestion = ({showMessageInput, wrapperClassName}: AskQuestionPro
 
                 <button
                     type="submit"
-                    disabled={
-                        Boolean(
-                            formState === 'submitting' ||
-                            formState === 'error' && (formError || phoneError || messageError)
-                        )
-                    }
+                    className={clsx('askQuestionButton', { 'askQuestionButtonActive': !isButtonDisabled})}
+                    disabled={isButtonDisabled}
                 >
-                    ЗАДАТЬ ВОПРОС ЮРИСТУ
+                    {formState === 'submitting' ? 'Ожидайте...' : 'ЗАДАТЬ ВОПРОС ЮРИСТУ'}
                 </button>
                 {
                     formError && <p style={{color: 'red'}}>{formError}</p>
                 }
                 {
                     messageTimer
-                        ? <p style={{color: 'green'}}>Обращение успешно отправлено</p>
+                        ? <p className="askQuestionGoodMessage">Обращение успешно отправлено</p>
                         : null
                 }
             </form>

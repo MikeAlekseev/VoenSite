@@ -91,10 +91,6 @@ h2 {
 /*        transform: scale(1.1);*/
 /*    }*/
 /*}*/
-.main__content__form__header{
-    /*border: 1px solid black;*/
-    margin: 20px;
-}
 .main__content__form{
     display: flex;
     flex-direction: column;

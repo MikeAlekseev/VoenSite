@@ -1,27 +1,27 @@
 import {AskQuestion} from "@/app/AskQuestion";
-import {Carousel, CarouselSlide} from '@/app/components/Carousel'
+// import {Carousel, CarouselSlide} from '@/app/components/Carousel'
 
-import bat01Img from './resources/bat-01.jpg'
-import bat02Img from './resources/bat-02.jpg'
-import bat03Img from './resources/bat-03.jpg'
-import bat04Img from './resources/bat-04.jpg'
-import bat05Img from './resources/bat-05.jpg'
+// import bat01Img from './resources/bat-01.jpg'
+// import bat02Img from './resources/bat-02.jpg'
+// import bat03Img from './resources/bat-03.jpg'
+// import bat04Img from './resources/bat-04.jpg'
+// import bat05Img from './resources/bat-05.jpg'
 import './page.ranenie.css'
 
-const slides: CarouselSlide[] = [
+/*const slides: CarouselSlide[] = [
     { id: '1', src: bat01Img, alt: 'Бабочка 1' },
     { id: '2', src: bat02Img, alt: 'Бабочка 2' },
     { id: '3', src: bat03Img, alt: 'Бабочка 3' },
     { id: '4', src: bat04Img, alt: 'Бабочка 4' },
     { id: '5', src: bat05Img, alt: 'Бабочка 5' },
-]
+]*/
 
 export default function Home(){
     return (
         <>
             <div className="help">
-                <h1 className="help__up">Выплаты по ранению</h1>
-                <div className="help__down">
+                <h1 className="help__up pc-container">Выплаты по ранению</h1>
+                <div className="help__down pc-container">
                     <div className="help__down__left">
                         {/*<h2 className="help__down__left__header">Юридическая защита военнослужащих и их семей</h2>*/}
                         <div className="p"><b>+</b> дела ведут квалифицированные юристы, проходившие службу в органах военной юстиции.</div>
@@ -29,7 +29,7 @@ export default function Home(){
                         <div className="p"><b>+</b> работаем по договору, оплата за результат.</div>
                         <div className="p"> Задать вопрос по ранению военному юристу</div>
                     </div>
-                    <AskQuestion/>
+                    <AskQuestion darkMode/>
                 </div>
             </div>
             <div className="main">
@@ -101,9 +101,9 @@ export default function Home(){
                     5. Результат. Вы получаете выплату за ранение и оплачиваете наши услуги.<br/>
                     <br/><br/>
                     <h2>Выплаты по ранению, кейсы:</h2>
-                    <Carousel slides={slides}/>
+                    {/*<Carousel slides={slides}/>*/}
                     <br/><br/>
-                    <AskQuestion showMessageInput/>
+                    <AskQuestion showMessageInput darkMode/>
                 </div>
             </div>
         </>

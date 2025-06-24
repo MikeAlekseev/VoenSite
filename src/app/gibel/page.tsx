@@ -4,8 +4,8 @@ export default function Home(){
     return (
         <>
                 <div className="help">
-                        <h1 className="help__up">Выплаты по гибели</h1>
-                        <div className="help__down">
+                        <h1 className="help__up pc-container">Выплаты по гибели</h1>
+                        <div className="help__down pc-container">
                                 <div className="help__down__left">
                                         <b>Преимущества ВПБ «Юстиция»:</b><br/>
                                         <div className="p"><b>+</b> дела ведут квалифицированные юристы, проходившие службу в органах военной
@@ -17,7 +17,7 @@ export default function Home(){
                                         <div className="p"><b>+</b> оплата за результат.</div>
                                         <div className="p">Нужна консультация? Оставьте заявку:</div>
                                 </div>
-                                <AskQuestion/>
+                                <AskQuestion darkMode/>
                         </div>
                 </div>
                 <div className="main">
@@ -95,7 +95,7 @@ export default function Home(){
                                 <h2>Выплаты по ранению, кейсы:</h2>
                                 <p>СЛАЙДЕР В ПРОЦЕССЕ РАЗРАБОТКИ</p>
                                 <br/><br/>
-                                <AskQuestion showMessageInput/>
+                                <AskQuestion showMessageInput darkMode/>
                         </div>
                 </div>
         </>

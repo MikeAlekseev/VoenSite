@@ -16,6 +16,10 @@ a {
   text-decoration: none;
   //color: white;
 }
+.pc-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 .link__black{
   color: black !important;
 }
@@ -65,7 +69,10 @@ li {
   /*color: white;*/
 }
 .header__down{
-  /*margin-top: 20px;*/
+  background-image: url(img/fonthead.jpg);
+  background-repeat: no-repeat;       /* убрать повторы */
+  background-size: cover;             /* растянуть на весь блок */
+  background-position: center center; /* отцентрировать */
 }
 .nav{
   display: flex;
@@ -73,11 +80,6 @@ li {
   justify-content: space-around;
   padding: 10px 20px;
   /*border: 1px solid black;*/
-  background-image: url(img/fonthead.jpg);
-  background-repeat: no-repeat;       /* убрать повторы */
-  background-size: cover;             /* растянуть на весь блок */
-  background-position: center center; /* отцентрировать */
-
 }
 .help{
   /*background-color: lightgrey;*/
@@ -226,11 +228,6 @@ tr:nth-child(even) {
     white-space: nowrap;
     font-weight: bold;
   }
-}
-.main__content__form__header{
-  /*border: 1px solid black;*/
-  margin: 20px;
-  text-align: center;
 }
 .main__content__form{
   display: flex;

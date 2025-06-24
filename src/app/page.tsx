@@ -8,8 +8,8 @@ export default function Home() {
   return (
       <>
         <div className="help">
-          <h1 className="help__up">Консультация военного юриста</h1>
-          <div className="help__down">
+          <h1 className="help__up pc-container">Консультация военного юриста</h1>
+          <div className="help__down pc-container">
             <div className="help__down__left">
               <h2 className="help__down__left__header">Юридическая защита военнослужащих и их семей</h2>
 
@@ -18,7 +18,7 @@ export default function Home() {
               <div className="p"><b>+</b> пакетное предложение для тех, у кого часто возникают вопросы</div>
               <div className="p"><b>+</b> низкие цены</div>
             </div>
-            <AskQuestion/>
+            <AskQuestion darkMode/>
           </div>
         </div>
         <div className="main">

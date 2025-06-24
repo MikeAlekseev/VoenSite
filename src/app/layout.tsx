@@ -34,7 +34,7 @@ export default function RootLayout({
         <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <div className="top">
             <div className="header">
-                <div className="header__up">
+                <div className="header__up pc-container">
                     <div className="logo">
                         <Link href="/">
                             <Image className="main_logo" src={logoImg} alt="logo"/>
@@ -53,7 +53,7 @@ export default function RootLayout({
                     </div>
                 </div>
                 <div className="header__down">
-                    <ul className="nav">
+                    <ul className="nav pc-container">
                         <Link href="/" className="link__white">
                             <li>Консультация Юриста</li>
                         </Link>
