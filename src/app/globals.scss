@@ -52,6 +52,7 @@ li {
 }
 .main_logo{
   max-width: 250px;
+  max-height: 90px;
 }
 .adress__up{
   /*border: 1px solid black;*/
@@ -442,10 +443,6 @@ tr:nth-child(even) {
   -ms-flex-align: center;
   align-items: center;
   padding: 10px 20px;
-}
-
-.main_logo {
-  max-width: 250px;
 }
 
 .adress__up, .vizitka__up {

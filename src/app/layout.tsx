@@ -1,7 +1,9 @@
 import type {Metadata} from "next";
+import Image from "next/image";
 import Script from 'next/script'
 import Link from 'next/link'
 import {Geist, Geist_Mono} from "next/font/google";
+import logoImg from './resources/logo.png'
 import "./globals.scss";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 // import {AskQuestion} from "@/app/AskQuestion";
@@ -35,8 +37,7 @@ export default function RootLayout({
                 <div className="header__up">
                     <div className="logo">
                         <Link href="/">
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
-                            <img className="main_logo" src="/img/logo.png" alt="logo"/>
+                            <Image className="main_logo" src={logoImg} alt="logo"/>
                         </Link>
                     </div>
                     <div className="telegram">
@@ -110,7 +111,7 @@ export default function RootLayout({
 
             <div className="footer">
                 <div className="logo">
-                    <img className="main_logo" src="/img/logo.png" alt="logo"/>
+                    <Image className="main_logo" src={logoImg} alt="logo"/>
                 </div>
                 <div className="vizitka__down">
                     <i className="bi bi-telephone-fill"></i> +79102210010 <br/>

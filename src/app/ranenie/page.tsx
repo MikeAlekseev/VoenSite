@@ -1,5 +1,21 @@
-import './page.ranenie.css'
 import {AskQuestion} from "@/app/AskQuestion";
+import {Carousel, CarouselSlide} from '@/app/components/Carousel'
+
+import bat01Img from './resources/bat-01.jpg'
+import bat02Img from './resources/bat-02.jpg'
+import bat03Img from './resources/bat-03.jpg'
+import bat04Img from './resources/bat-04.jpg'
+import bat05Img from './resources/bat-05.jpg'
+import './page.ranenie.css'
+
+const slides: CarouselSlide[] = [
+    { id: '1', src: bat01Img, alt: 'Бабочка 1' },
+    { id: '2', src: bat02Img, alt: 'Бабочка 2' },
+    { id: '3', src: bat03Img, alt: 'Бабочка 3' },
+    { id: '4', src: bat04Img, alt: 'Бабочка 4' },
+    { id: '5', src: bat05Img, alt: 'Бабочка 5' },
+]
+
 export default function Home(){
     return (
         <>
@@ -85,7 +101,7 @@ export default function Home(){
                     5. Результат. Вы получаете выплату за ранение и оплачиваете наши услуги.<br/>
                     <br/><br/>
                     <h2>Выплаты по ранению, кейсы:</h2>
-                    <p>СЛАЙДЕР В ПРОЦЕССЕ РАЗРАБОТКИ</p>
+                    <Carousel slides={slides}/>
                     <br/><br/>
                     <AskQuestion showMessageInput/>
                 </div>
