@@ -9,6 +9,7 @@ import feedback4Img from './resources/feedback4.jpg'
 import feedback5Img from './resources/feedback5.jpg'
 import feedback6Img from './resources/feedback6.jpg'
 import {AskQuestion} from './AskQuestion'
+import {Lables} from "@/app/components/Lables";
 
 const feedbackSlides: CarouselSlide[] = [
   { id: '1', src: feedback1Img, alt: 'Отзыв' },
@@ -36,24 +37,8 @@ export default function Home() {
             <AskQuestion darkMode/>
           </div>
         </div>
-        <div className="main">
-          <h2 className="main__header">С нами работают военнослужащие:</h2>
-          <div className="main__list">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img className="main__checklist" src="/img/mo_rf.jpg" alt="mo_rf"/>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img className="main__checklist" src="/img/fsbrf.jpg" alt="fsb"/>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img className="main__checklist" src="/img/sk_rf.jpg" alt="sk"/>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img className="main__checklist" src="/img/mcs_rf.jpg" alt="mcs"/>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img className="main__checklist" src="/img/mvd_rf.jpg" alt="mvd"/>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img className="main__checklist" src="/img/rosgv.jpg" alt="rosgv"/>
-          </div>
-        </div>
-        <div className="boss">
+        <Lables />
+        <div className="boss pc-container">
           <div className="main__content">
             <h2 className="main__content__header">Бесплатная консультация военного юриста</h2>
             <div className="main__content__list">
@@ -123,10 +108,7 @@ export default function Home() {
 
           <AskQuestion showMessageInput/>
         </div>
-
-        {/*</div>*/}
-
-    <div className="service">
+    <div className="service pc-container">
       <h2 className="service__header">Услуги военного юриста</h2>
       <div className="services">
         <Link href="ranenie">
@@ -152,7 +134,7 @@ export default function Home() {
         </Link>
       </div>
     </div>
-    <div className="feedback">
+    <div className="feedback pc-container">
       <h2 className="feadback__header">
         Отзывы о консультациях ВПБ &ldquo;Юстиция&rdquo;
       </h2>
@@ -218,7 +200,7 @@ export default function Home() {
         </table>
       </div>
     </div>
-    <div className="cases">
+    <div className="cases pc-container">
       <div className="cases__down">
         <h2 className="cases__down__header">Наши юристы</h2>
         <div className="cases__down__list">

@@ -4,6 +4,7 @@ import Script from 'next/script'
 import Link from 'next/link'
 import {Geist, Geist_Mono} from "next/font/google";
 import logoImg from './resources/logo.png'
+import logoImg2 from './resources/logo2.png'
 import "./globals.scss";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 // import {AskQuestion} from "@/app/AskQuestion";
@@ -75,43 +76,12 @@ export default function RootLayout({
                     </ul>
                 </div>
             </div>
-            {/*<div className="help">*/}
-            {/*    <h1 className="help__up">Консультация военного юриста</h1>*/}
-            {/*    <div className="help__down">*/}
-            {/*        <div className="help__down__left">*/}
-            {/*            <h2 className="help__down__left__header">Юридическая защита военнослужащих и их семей</h2>*/}
-
-            {/*            <div className="p"><b>+</b> консультируют юристы, проходившие службу в органах военной юстиции</div>*/}
-            {/*            <div className="p"><b>+</b> тщательная подготовка к консультации, углубленная работа с клиентом</div>*/}
-            {/*            <div className="p"><b>+</b> пакетное предложение для тех, у кого часто возникают вопросы</div>*/}
-            {/*            <div className="p"><b>+</b> низкие цены</div>*/}
-            {/*        </div>*/}
-            {/*        <AskQuestion/>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
-            {/*<div className="main">*/}
-            {/*    <h2 className="main__header">С нами работают военнослужащие:</h2>*/}
-            {/*    <div className="main__list">*/}
-            {/*        /!* eslint-disable-next-line @next/next/no-img-element *!/*/}
-            {/*        <img className="main__checklist" src="/img/mo_rf.jpg" alt="mo_rf"/>*/}
-            {/*        /!* eslint-disable-next-line @next/next/no-img-element *!/*/}
-            {/*        <img className="main__checklist" src="/img/fsbrf.jpg" alt="fsb"/>*/}
-            {/*        /!* eslint-disable-next-line @next/next/no-img-element *!/*/}
-            {/*        <img className="main__checklist" src="/img/sk_rf.jpg" alt="sk"/>*/}
-            {/*        /!* eslint-disable-next-line @next/next/no-img-element *!/*/}
-            {/*        <img className="main__checklist" src="/img/mcs_rf.jpg" alt="mcs"/>*/}
-            {/*        /!* eslint-disable-next-line @next/next/no-img-element *!/*/}
-            {/*        <img className="main__checklist" src="/img/mvd_rf.jpg" alt="mvd"/>*/}
-            {/*        /!* eslint-disable-next-line @next/next/no-img-element *!/*/}
-            {/*        <img className="main__checklist" src="/img/rosgv.jpg" alt="rosgv"/>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
 
             {children}
 
             <div className="footer">
                 <div className="logo">
-                    <Image className="main_logo" src={logoImg} alt="logo"/>
+                    <Image className="main_logo" src={logoImg2} alt="logo"/>
                 </div>
                 <div className="vizitka__down">
                     <i className="bi bi-telephone-fill"></i> +79102210010 <br/>

@@ -1,0 +1,28 @@
+.main{
+  /*background-color: beige;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.main__header{
+  /*border: 1px solid black;*/
+  margin: 20px;
+}
+
+.main__list{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  padding-bottom: 20px;
+}
+.main__checklist{
+  max-width: 150px;
+  /*height: 50px;*/
+  /*border: 1px solid black;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

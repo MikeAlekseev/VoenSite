@@ -93,14 +93,14 @@ button {
         transform: scale(1.1);
     }
 }
-.main{
-    /*background-color: beige;*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
-}
+/*.main{*/
+/*    !*background-color: beige;*!*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    flex-direction: column;*/
+/*    padding: 20px;*/
+/*}*/
 .main__content__form{
     display: flex;
     flex-direction: column;
