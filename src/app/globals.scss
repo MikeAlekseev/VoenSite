@@ -47,12 +47,12 @@ li {
 }
 
 .logo{
-  max-width: 200px;
-  height: 50px;
+  //max-width: 200px;
+  //height: 50px;
   /*border: 1px solid black;*/
   display: flex;
   align-items: center;
-  padding: 10px 20px;
+  //padding: 10px 20px;
 }
 .main_logo{
   max-width: 250px;
@@ -392,13 +392,19 @@ tr:nth-child(even) {
   display: flex;
   justify-content: space-between;
   padding: 50px;
-  width: 100%;
+  //width: 100%;
   border-top: 1px solid black;
   align-items: center;
   background-image: url(img/fonthead.jpg);
   background-repeat: no-repeat;       /* убрать повторы */
   background-size: cover;             /* растянуть на весь блок */
   background-position: center center; /* отцентрировать */
+}
+.footer__list{
+  display: flex;
+  align-items: center;
+  gap: 30%;
+  justify-content: center;
 }
 .vizitka__down {
   /*border: 1px solid black;*/
@@ -434,45 +440,45 @@ tr:nth-child(even) {
 }
 
 /* Flexbox fallbacks and prefixes */
-.flex-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
+//.flex-container {
+//  display: -webkit-box;
+//  display: -ms-flexbox;
+//  display: flex;
+//}
+//
+///* Main layout */
+//.top {
+//  max-width: 100%;
+//  margin: 0 auto;
+//}
+//
+//.header__up {
+//  display: -webkit-box;
+//  display: -ms-flexbox;
+//  display: flex;
+//  -webkit-box-align: center;
+//  -ms-flex-align: center;
+//  align-items: center;
+//  -webkit-box-pack: justify;
+//  -ms-flex-pack: justify;
+//  justify-content: space-between;
+//  padding: 10px 20px;
+//  height: 150px;
+//  -ms-flex-wrap: wrap;
+//  flex-wrap: wrap;
+//}
 
-/* Main layout */
-.top {
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.header__up {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: 10px 20px;
-  height: 150px;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-.logo {
-  max-width: 200px;
-  height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 10px 20px;
-}
+//.logo {
+//  max-width: 200px;
+//  height: 50px;
+//  display: -webkit-box;
+//  display: -ms-flexbox;
+//  display: flex;
+//  -webkit-box-align: center;
+//  -ms-flex-align: center;
+//  align-items: center;
+//  padding: 10px 20px;
+//}
 
 .adress__up, .vizitka__up {
   padding: 10px 20px;
@@ -489,12 +495,12 @@ tr:nth-child(even) {
 //  -ms-flex-pack: justify;
 //  justify-content: space-between;
 //}
-@-moz-document url-prefix() {
-  .feedback {
-    min-height: 0;
-    overflow: visible;
-  }
-}
+//@-moz-document url-prefix() {
+//  .feedback {
+//    min-height: 0;
+//    overflow: visible;
+//  }
+//}
 
 
 

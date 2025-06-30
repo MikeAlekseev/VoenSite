@@ -64,15 +64,15 @@ export default function RootLayout({
                         <Link href="/gibel" className="link__white">
                             <li>Выплаты гибель</li>
                         </Link>
-                        <a href="#" className="link__white">
+                        <Link href="#" className="link__white">
                             <li>Безвести провавший</li>
-                        </a>
+                        </Link>
                         <a href="#" className="link__white">
                             <li>Отзывы</li>
                         </a>
-                        <a href="#" className="link__white">
+                        <Link href="/about" className="link__white">
                             <li>О компании</li>
-                        </a>
+                        </Link>
                     </ul>
                 </div>
             </div>
@@ -80,22 +80,24 @@ export default function RootLayout({
             {children}
 
             <div className="footer">
-                <div className="logo">
-                    <Image className="main_logo" src={logoImg2} alt="logo"/>
-                </div>
-                <div className="vizitka__down">
-                    <i className="bi bi-telephone-fill"></i> +79102210010 <br/>
-                    <i className="bi bi-envelope-at-fill"></i> mail@iusticia.ru <br/>
-                    <i className="bi bi-telegram"></i> t.me/vpbust <br/>
-                    <Link href="/cofidential" className="link__white">Политика конфиденциальности.</Link>
-                </div>
-                <div className="footer__map">
-                    <iframe
-                        src="https://yandex.ru/map-widget/v1/?um=constructor%3Adde35808e8071b3d5af89226029951ab2d04e82afcc1688ceb6e5f75b8cfc311&amp;source=constructor"
-                        width="300"
-                        height="200"
-                        frameBorder="0">
-                    </iframe>
+                <div className="footer__list pc-container">
+                    <div className="logo">
+                        <Image className="main_logo" src={logoImg2} alt="logo"/>
+                    </div>
+                    <div className="vizitka__down">
+                        <i className="bi bi-telephone-fill"></i> +79102210010 <br/>
+                        <i className="bi bi-envelope-at-fill"></i> mail@iusticia.ru <br/>
+                        <i className="bi bi-telegram"></i> t.me/vpbust <br/>
+                        <Link className="link__white" href="/cofidential">Политика конфиденциальности</Link>
+                    </div>
+                    <div className="footer__map">
+                        <iframe
+                            src="https://yandex.ru/map-widget/v1/?um=constructor%3Adde35808e8071b3d5af89226029951ab2d04e82afcc1688ceb6e5f75b8cfc311&amp;source=constructor"
+                            width="300"
+                            height="200"
+                            frameBorder="0">
+                        </iframe>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,0 +1,45 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    outline: none;
+    font-family: Montserrat Alternates, sans-serif;
+    line-height: 1.5;
+    font-size: 14px;
+}
+h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: normal;
+}
+.h3{
+    text-align:
+}
+.top__about{
+    background-image: url(../img/fon2.png);
+    background-repeat: no-repeat;       /* убрать повторы */
+    background-size: cover;             /* растянуть на весь блок */
+    background-position: center center;
+    padding: 30px 30px;
+    max-width: 840px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 25px 25px 25px 25px;
+
+}
+.about{
+    flex-direction: column;
+    padding: 20px ;
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    border: black solid 1px;
+    border-radius: 25px 25px 25px 25px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+.about__header{
+    align-items: center;
+}
