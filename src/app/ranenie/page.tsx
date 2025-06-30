@@ -1,5 +1,17 @@
 import {AskQuestion} from "@/app/AskQuestion";
 
+import {Carousel, CarouselSlide} from "@/app/components/Carousel";
+
+import ranenieCase1Img from './resources/1sbor.jpg'
+import ranenieCase2Img from './resources/2sbor.jpg'
+import ranenieCase3Img from './resources/3sbor.jpg'
+
+const ranenieSlides: CarouselSlide[] = [
+    {id: '1',src: ranenieCase1Img, alt: 'ранение скрин1'},
+    {id: '2',src: ranenieCase2Img, alt: 'ранение скрин2'},
+    {id: '3',src: ranenieCase3Img, alt: 'ранение скрин3'}
+]
+
 import './page.ranenie.css'
 import {Lables} from "@/app/components/Lables";
 
@@ -72,7 +84,7 @@ export default function Home(){
                     5. Результат. Вы получаете выплату за ранение и оплачиваете наши услуги.<br/>
                     <br/><br/>
                     <h2>Выплаты по ранению, кейсы:</h2>
-                    <p>СЛАЙДЕР В ПРОЦЕССЕ РАЗРАБОТКИ</p>
+                    <Carousel slides={ranenieSlides} width={600}/>
                     <br/><br/>
                     <AskQuestion showMessageInput darkMode/>
                 </div>
