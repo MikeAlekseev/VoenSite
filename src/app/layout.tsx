@@ -7,6 +7,7 @@ import logoImg from './resources/logo.png'
 import logoImg2 from './resources/logo2.png'
 import "./globals.scss";
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import React from "react";
 // import {AskQuestion} from "@/app/AskQuestion";
 
 
@@ -41,16 +42,16 @@ export default function RootLayout({
                             <Image className="main_logo" src={logoImg} alt="logo"/>
                         </Link>
                     </div>
-                    <div className="telegram">
+                    <div className="telegram ">
                         <Link href="https://t.me/vpbust" className="link__black">
                             <i className="bi bi-telegram"></i> Написать в Телеграм
                         </Link>
                     </div>
                     <div className="mail link__black">
-                        <i className="bi bi-envelope-at-fill"></i> mail@iusticia.ru
+                        <i className="bi bi-envelope-at-fill"></i><a className="link__black" href="mailto:mail@iusticia.ru"> Напишите нам</a>
                     </div>
                     <div className="phone link__black">
-                        <i className="bi bi-telephone-fill"></i> +79102210010
+                        <i className="bi bi-telephone-fill"></i><a className="link__black" href="tel:+79102210010"> +7-910-221-00-10</a>
                     </div>
                 </div>
                 <div className="header__down">
@@ -81,13 +82,24 @@ export default function RootLayout({
 
             <div className="footer">
                 <div className="footer__list pc-container">
-                    <div className="logo">
+                    <Link href="/" className="logo">
                         <Image className="main_logo" src={logoImg2} alt="logo"/>
-                    </div>
+                    </Link>
                     <div className="vizitka__down">
-                        <i className="bi bi-telephone-fill"></i> +79102210010 <br/>
-                        <i className="bi bi-envelope-at-fill"></i> mail@iusticia.ru <br/>
-                        <i className="bi bi-telegram"></i> t.me/vpbust <br/>
+                        {/*<i className="bi bi-telephone-fill"></i> +79102210010 <br/>*/}
+                        {/*<i className="bi bi-envelope-at-fill"></i> mail@iusticia.ru <br/>*/}
+                        {/*<i className="bi bi-telegram"></i> t.me/vpbust <br/>*/}
+                        <div className="telegram">
+                            <Link href="https://t.me/vpbust" className="link__white">
+                                <i className="bi bi-telegram"></i> Написать в Телеграм
+                            </Link>
+                        </div>
+                        <div className="mail link__white">
+                            <i className="bi bi-envelope-at-fill"></i><a className="link__white" href="mail@iusticia.ru"> Напишите нам</a>
+                        </div>
+                        <div className="phone link__white">
+                            <i className="bi bi-telephone-fill"></i><a className="link__white" href="tel:+79102210010"> +7-910-221-00-10</a>
+                        </div>
                         <Link className="link__white" href="/cofidential">Политика конфиденциальности</Link>
                     </div>
                     <div className="footer__map">

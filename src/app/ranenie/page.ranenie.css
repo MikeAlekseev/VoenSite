@@ -72,25 +72,25 @@ h2 {
     display: flex;
     flex-direction: column;
 }
-/*button {*/
-/*    padding: 10px;*/
-/*    color: green;*/
-/*    border: 1px solid green;*/
-/*    margin-top: 10px;*/
-/*    background-color: white;*/
-/*    transition:*/
-/*            transform 0.3s ease,*/
-/*            color 0.3s ease,*/
-/*            background-color 0.3s ease,*/
-/*            border-color 0.3s ease;*/
+.ranenie__button {
+    padding: 10px;
+    color: green;
+    border: 1px solid green;
+    margin-top: 10px;
+    background-color: white;
+    transition:
+            transform 0.3s ease,
+            color 0.3s ease,
+            background-color 0.3s ease,
+            border-color 0.3s ease;
 
-/*    &:hover {*/
-/*        color: white;*/
-/*        border-color: white;*/
-/*        background-color: green;*/
-/*        transform: scale(1.1);*/
-/*    }*/
-/*}*/
+    &:hover {
+        color: white;
+        border-color: white;
+        background-color: green;
+        transform: scale(1.1);
+    }
+}
 .main__content__form{
     display: flex;
     flex-direction: column;

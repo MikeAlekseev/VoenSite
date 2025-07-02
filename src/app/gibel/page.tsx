@@ -8,7 +8,7 @@ export default function Home(){
                         <h1 className="help__up pc-container">Выплаты по гибели</h1>
                         <div className="help__down pc-container">
                                 <div className="help__down__left">
-                                        <b>Преимущества ВПБ «Юстиция»:</b><br/>
+                                        <b className="p">Преимущества ВПБ «Юстиция»:</b><br/>
                                         <div className="p"><b>+</b> дела ведут квалифицированные юристы, проходившие службу в органах военной
                                                 юстиции;
                                         </div>
