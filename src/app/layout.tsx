@@ -66,7 +66,7 @@ export default function RootLayout({
                             <li>Выплаты гибель</li>
                         </Link>
                         <Link href="#" className="link__white">
-                            <li>Безвести провавший</li>
+                            <li>Без вести пропавший</li>
                         </Link>
                         <a href="#" className="link__white">
                             <li>Отзывы</li>
