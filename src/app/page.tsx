@@ -191,6 +191,12 @@ export default function Home() {
             <td>6</td>
           </tr>
           <tr>
+            <td>Цена</td>
+            <td>14500р</td>
+            <td>28500р</td>
+            <td>38500р</td>
+          </tr>
+          <tr>
             <td></td>
             <td><a href="#" className="link__black"><b>Оформить подписку</b></a></td>
             <td><a href="#" className="link__black"><b>Оформить подписку</b></a></td>

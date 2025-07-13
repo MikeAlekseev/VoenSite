@@ -56,8 +56,7 @@ h2 {
     padding: 10px 20px;
     /*border: 1px solid black;*/
     justify-content: center;
-    display: flex
-;
+    display: flex;
 }
 .help__down{
     display: flex;
@@ -97,4 +96,86 @@ h2 {
     /*border: 1px solid black;*/
     padding: 20px;
     margin: 20px;
+}
+/*.responsive-carousel{*/
+/*    width: 600px;*/
+/*}*/
+
+
+/* Планшеты (до 1024px) */
+@media (max-width: 1024px) {
+    .top__ranenie {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    .ranenie {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .help__down {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .main__content__form {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .ranenie__button {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+.responsive-carousel{
+    width: 550px;
+}
+
+/* Мобильные устройства (до 768px) */
+@media (max-width: 768px) {
+    .top__ranenie {
+        padding: 15px;
+        border-radius: 15px;
+        margin: 10px auto;
+    }
+
+    .ranenie {
+        padding: 10px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .help__down {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .help__up {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .help {
+        padding: 20px 10px;
+    }
+
+    .main__content__form {
+        padding: 10px;
+        margin: 10px auto;
+        width: 95%;
+    }
+
+    .ranenie__button {
+        padding: 10px;
+        font-size: 16px;
+        width: 100%;
+        margin: 10px auto 0;
+    }
+    .responsive-carousel{
+        width: 550px;
+    }
+
 }

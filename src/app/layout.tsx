@@ -68,9 +68,9 @@ export default function RootLayout({
                         <Link href="#" className="link__white">
                             <li>Без вести пропавший</li>
                         </Link>
-                        <a href="#" className="link__white">
+                        <Link href="/otzivy" className="link__white">
                             <li>Отзывы</li>
-                        </a>
+                        </Link>
                         <Link href="/about" className="link__white">
                             <li>О компании</li>
                         </Link>
@@ -95,7 +95,7 @@ export default function RootLayout({
                             </Link>
                         </div>
                         <div className="mail link__white">
-                            <i className="bi bi-envelope-at-fill"></i><a className="link__white" href="mail@iusticia.ru"> Напишите нам</a>
+                            <i className="bi bi-envelope-at-fill"></i><a className="link__white" href="mail@iusticia.ru"> Напишите письмо</a>
                         </div>
                         <div className="phone link__white">
                             <i className="bi bi-telephone-fill"></i><a className="link__white" href="tel:+79102210010"> +7-910-221-00-10</a>

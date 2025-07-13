@@ -51,6 +51,11 @@
     transform: scale(1);
   }
 }
+//&.embla__button__white{
+//  .embla__button{
+//    color: white;
+//  }
+//}
 
 .embla__button:disabled {
   color: #aaaaaa;
@@ -65,3 +70,55 @@
   width: 35%;
   height: 35%;
 }
+/* Планшеты (до 1024px) */
+//@media (max-width: 1024px) {
+//  .embla__container {
+//    margin-left: 0;
+//  }
+//
+//  .embla__slide {
+//    flex: 0 0 80%;
+//  }
+//
+//  .embla__buttons {
+//    gap: 0.4rem;
+//  }
+//
+//  .embla__button {
+//    width: 3rem;
+//    height: 3rem;
+//  }
+//
+//  .embla__button__svg {
+//    width: 30%;
+//    height: 30%;
+//  }
+//}
+//
+///* Мобильные устройства (до 768px) */
+//@media (max-width: 768px) {
+//  .embla__slide {
+//    flex: 0 0 90%;
+//  }
+//
+//  .embla__button {
+//    width: 2.5rem;
+//    height: 2.5rem;
+//  }
+//
+//  .embla__buttons {
+//    gap: 0.3rem;
+//    justify-content: center;
+//  }
+//
+//  .embla__controls {
+//    flex-direction: column;
+//    align-items: center;
+//    margin-top: 10px;
+//  }
+//
+//  .embla__button__svg {
+//    width: 25%;
+//    height: 25%;
+//  }
+//}

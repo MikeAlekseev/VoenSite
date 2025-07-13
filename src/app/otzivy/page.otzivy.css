@@ -14,10 +14,7 @@ h2 {
     font-size: 20px;
     font-weight: normal;
 }
-.h3{
-    text-align:
-}
-.top__about{
+.top__otzivy{
     background-image: url(../img/fon2.png);
     background-repeat: no-repeat;       /* убрать повторы */
     background-size: cover;             /* растянуть на весь блок */
@@ -29,7 +26,7 @@ h2 {
     border-radius: 25px 25px 25px 25px;
 
 }
-.about{
+.otzivy{
     flex-direction: column;
     padding: 20px ;
     display: flex;
@@ -40,61 +37,53 @@ h2 {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
 }
-.about__header{
+.otzivy__header{
     align-items: center;
+    margin-bottom: 20px;
 }
+
 /* Планшеты (до 1024px) */
 @media (max-width: 1024px) {
-    .top__about {
+    .top__otzivy {
         max-width: 95%;
         padding: 20px;
         border-radius: 20px;
     }
 
-    .about {
+    .otzivy {
         max-width: 90%;
         padding: 15px;
     }
 
-    .about__header {
+    .otzivy__header {
         text-align: center;
         margin-bottom: 15px;
-    }
-
-    .h3 {
-        font-size: 18px;
-        text-align: center;
     }
 }
 
 /* Мобильные устройства (до 768px) */
 @media (max-width: 768px) {
-    .top__about {
+    .top__otzivy {
         width: 100%;
         padding: 15px;
         margin: 10px auto;
         border-radius: 15px;
     }
 
-    .about {
+    .otzivy {
         width: 100%;
         padding: 10px;
         font-size: 13px;
-        text-align: center;
     }
 
-    .about__header {
+    .otzivy__header {
         font-size: 18px;
+        text-align: center;
         margin-bottom: 10px;
     }
 
     h2 {
         font-size: 18px;
-        text-align: center;
-    }
-
-    .h3 {
-        font-size: 16px;
         text-align: center;
     }
 }
