@@ -21,9 +21,10 @@ export interface CarouselProps {
     loop?: boolean
     playOnInit?: boolean
     delay?: number
+    btnColor?: string
 }
 
-export const Carousel = ({ slides, width = 200, loop = true, playOnInit = true, delay = 3000 }: CarouselProps) => {
+export const Carousel = ({ slides, width = 200, loop = true, playOnInit = true, delay = 3000, btnColor }: CarouselProps) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     const options = useMemo<EmblaOptionsType>(() => ({ loop }), [])
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -51,8 +52,8 @@ export const Carousel = ({ slides, width = 200, loop = true, playOnInit = true, 
 
             <div className="embla__controls">
                 <div className="embla__buttons">
-                    <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
-                    <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
+                    <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} style={{ color: btnColor }} />
+                    <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} style={{ color: btnColor }} />
                 </div>
             </div>
         </section>

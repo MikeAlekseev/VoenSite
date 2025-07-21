@@ -40,11 +40,11 @@ export default function Home(){
                     <h2 className="otzivy__header">
                         Отзывы о консультациях ВПБ &ldquo;Юстиция&rdquo;
                     </h2>
-                    <Carousel slides={feedbackSlides} width={300}/>
+                    <Carousel slides={feedbackSlides} width={300} btnColor="white"/>
                     <h2 className="otzivy__header">
                         Выплаты по ранению, кейсы:
                     </h2>
-                    <Carousel slides={ranenieSlides} width={600}/>
+                    <Carousel slides={ranenieSlides} width={600} btnColor="white"/>
                 </div>
             </div>
         </>

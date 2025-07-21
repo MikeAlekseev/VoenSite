@@ -78,7 +78,7 @@ export default function Home(){
                     5. Результат. Вы получаете выплату за ранение и оплачиваете наши услуги.<br/>
                     <br/><br/>
                     <h2>Выплаты по ранению, кейсы:</h2>
-                    <Carousel slides={ranenieSlides} width={600}/>
+                    <Carousel slides={ranenieSlides} width={600} btnColor="white"/>
                     <br/><br/>
                     <AskQuestion showMessageInput darkMode/>
                 </div>
