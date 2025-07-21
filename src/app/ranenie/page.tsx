@@ -1,4 +1,4 @@
-import {AskQuestion} from "@/app/AskQuestion";
+import {AskQuestion} from "@/app/components/AskQuestion";
 
 import {Carousel, CarouselSlide} from "@/app/components/Carousel";
 

@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import {Carousel, CarouselSlide} from "@/app/components/Carousel";
+import {BuySubscription} from "@/app/components/BuySubscription";
 
 import feedback1Img from './resources/feedback1.jpg'
 import feedback2Img from './resources/feedback2.jpg'
@@ -8,7 +9,7 @@ import feedback3Img from './resources/feedback3.jpg'
 import feedback4Img from './resources/feedback4.jpg'
 import feedback5Img from './resources/feedback5.jpg'
 import feedback6Img from './resources/feedback6.jpg'
-import {AskQuestion} from './AskQuestion'
+import {AskQuestion} from './components/AskQuestion'
 import {Lables} from "@/app/components/Lables";
 
 const feedbackSlides: CarouselSlide[] = [
@@ -198,9 +199,9 @@ export default function Home() {
           </tr>
           <tr>
             <td></td>
-            <td><a href="#" className="link__black"><b>Оформить подписку</b></a></td>
-            <td><a href="#" className="link__black"><b>Оформить подписку</b></a></td>
-            <td><a href="#" className="link__black"><b>Оформить подписку</b></a></td>
+            <td><BuySubscription tariff="Лайт"/></td>
+            <td><BuySubscription tariff="Оптима"/></td>
+            <td><BuySubscription tariff="ВИП"/></td>
           </tr>
           </tbody>
         </table>

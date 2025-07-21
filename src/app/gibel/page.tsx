@@ -1,5 +1,5 @@
 import './page.gibel.css'
-import {AskQuestion} from "@/app/AskQuestion";
+import {AskQuestion} from "@/app/components/AskQuestion";
 import {Lables} from "@/app/components/Lables";
 export default function Home(){
     return (

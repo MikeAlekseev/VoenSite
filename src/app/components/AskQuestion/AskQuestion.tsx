@@ -12,9 +12,21 @@ interface AskQuestionProps {
     showMessageInput?: boolean;
     wrapperClassName?: string;
     darkMode?: boolean;
+    headerText?: string;
+    buttonText?: string;
+    onSuccess?: () => void;
+    sentMessage?: string;
 }
 
-export const AskQuestion = ({showMessageInput, wrapperClassName, darkMode}: AskQuestionProps) => {
+export const AskQuestion = ({
+    showMessageInput,
+    wrapperClassName,
+    darkMode,
+    headerText = 'Есть вопрос? Задайте его:',
+    buttonText = 'ЗАДАТЬ ВОПРОС ЮРИСТУ',
+    onSuccess,
+    sentMessage,
+}: AskQuestionProps) => {
     const [message, setMessage] = useState('');
     const [messageError, setMessageError] = useState(validateMessage(message));
     const [phone, setPhone] = useState('');
@@ -42,7 +54,7 @@ export const AskQuestion = ({showMessageInput, wrapperClassName, darkMode}: AskQ
         setFormError('')
 
         try {
-            await sendMail(formRawValues.phone, formRawValues.question)
+            await sendMail(formRawValues.phone, sentMessage ?? formRawValues.question)
 
             setFormState('init')
             setMessage('')
@@ -54,11 +66,15 @@ export const AskQuestion = ({showMessageInput, wrapperClassName, darkMode}: AskQ
                 setMessageTimer(0)
             }, 10 * 1000)) as unknown as number
             setMessageTimer(timer)
+
+            if (onSuccess) {
+                onSuccess()
+            }
         } catch (error) {
             setFormState('error')
             setFormError((error as { message: string }).message)
         }
-    }, [messageError, phoneError, messageTimer])
+    }, [messageError, phoneError, messageTimer, onSuccess, sentMessage])
 
     const isButtonDisabled = Boolean(
         formState === 'submitting' ||
@@ -67,7 +83,11 @@ export const AskQuestion = ({showMessageInput, wrapperClassName, darkMode}: AskQ
 
     return (
         <div className={clsx('askQuestionWrapper main__content__form', { 'askQuestionDarkMode': darkMode }, wrapperClassName)}>
-            <h2 className="main__content__form__header">Есть вопрос? Задайте его: </h2>
+            {
+                headerText
+                    ? (<h2 className="main__content__form__header">{headerText}</h2>)
+                    : null
+            }
             <form className="askQuestionForm cons__form" action="/submit" method="post" onSubmit={submitHandler}>
                 {
                     showMessageInput && (
@@ -118,7 +138,7 @@ export const AskQuestion = ({showMessageInput, wrapperClassName, darkMode}: AskQ
                     className={clsx('askQuestionButton', { 'askQuestionButtonActive': !isButtonDisabled})}
                     disabled={isButtonDisabled}
                 >
-                    {formState === 'submitting' ? 'Ожидайте...' : 'ЗАДАТЬ ВОПРОС ЮРИСТУ'}
+                    {formState === 'submitting' ? 'Ожидайте...' : buttonText}
                 </button>
                 {
                     formError && <p style={{color: 'red'}}>{formError}</p>
