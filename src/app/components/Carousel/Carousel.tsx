@@ -1,6 +1,6 @@
 "use client"
 
-import { useMemo } from "react"
+import {useEffect, useMemo, useRef, useState} from "react"
 import Image, {StaticImageData} from "next/image"
 import {EmblaOptionsType} from 'embla-carousel'
 import useEmblaCarousel from 'embla-carousel-react'
@@ -16,7 +16,7 @@ export interface CarouselSlide {
 }
 
 export interface CarouselProps {
-    width?: number
+    maxWidth?: number
     slides: CarouselSlide[]
     loop?: boolean
     playOnInit?: boolean
@@ -24,7 +24,13 @@ export interface CarouselProps {
     btnColor?: string
 }
 
-export const Carousel = ({ slides, width = 200, loop = true, playOnInit = true, delay = 3000, btnColor }: CarouselProps) => {
+export const Carousel = ({ slides, maxWidth = 200, loop = true, playOnInit = true, delay = 3000, btnColor }: CarouselProps) => {
+    const elRef = useRef<HTMLElement>(null)
+    const maxWidthRef = useRef(maxWidth)
+
+    maxWidthRef.current = maxWidth
+
+    const [width, setWidth] = useState(maxWidth)
     // eslint-disable-next-line react-hooks/exhaustive-deps
     const options = useMemo<EmblaOptionsType>(() => ({ loop }), [])
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -38,8 +44,21 @@ export const Carousel = ({ slides, width = 200, loop = true, playOnInit = true, 
         onNextButtonClick
     } = usePrevNextButtons(emblaApi)
 
+    useEffect(() => {
+        const id = setInterval(() => {
+            if (elRef.current && elRef.current.parentNode) {
+                const { clientWidth } = elRef.current.parentNode as HTMLElement
+
+                setWidth(Math.min(clientWidth - 30, maxWidthRef.current))
+            }
+
+        }, 500)
+
+        return () => clearInterval(id)
+    }, [setWidth])
+
     return (
-        <section className="embla" style={{ width: width + 'px' }}>
+        <section ref={elRef} className="embla" style={{ width: width + 'px' }}>
             <div className="embla__viewport" ref={emblaRef}>
                 <div className="embla__container">
                     {slides.map(({ id, src, alt }) => (

@@ -139,7 +139,7 @@ export default function Home() {
       <h2 className="feadback__header">
         Отзывы о консультациях ВПБ &ldquo;Юстиция&rdquo;
       </h2>
-      <Carousel slides={feedbackSlides} width={300}/>
+      <Carousel slides={feedbackSlides} maxWidth={300}/>
       <div className="feadback__stage">
         <h2 className="feadback__stage__header">Этапы работ</h2>
         <p>
