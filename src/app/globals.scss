@@ -399,6 +399,13 @@ tr:nth-child(even) {
 }
 
 /* Tables */
+.table-desktop {
+  display: block;
+}
+.table-mobile {
+  display: none;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -502,6 +509,13 @@ h2 {
   .info {
     max-height: none;
   }
+  table {
+    font-size: 14px;
+  }
+
+  th, td {
+    padding: 10px;
+  }
 }
 
 /* Мобильные устройства (до 768px) */
@@ -564,5 +578,47 @@ h2 {
 
   .footer__list {
     gap: 10px;
+  }
+  .line{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-height: 20px;
+    margin: 30px 0;
+  }
+  .table-desktop {
+    display: none;
+  }
+  .table-mobile {
+    display: block;
+  }
+
+  .tariff-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  }
+
+  .tariff-card h3 {
+    margin-top: 0;
+    color: green;
+  }
+
+  .tariff-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+
+  .tariff-card li {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .tariff-card li:last-child {
+    border-bottom: none;
   }
 }

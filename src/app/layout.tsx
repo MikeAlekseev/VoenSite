@@ -43,9 +43,9 @@ export default function RootLayout({
                         </Link>
                     </div>
                     <div className="telegram ">
-                        <Link href="https://t.me/vpbust" className="link__black">
+                        <a href="https://t.me/vpbust" className="link__black">
                             <i className="bi bi-telegram"></i> Написать в Телеграм
-                        </Link>
+                        </a>
                     </div>
                     <div className="mail link__black">
                         <i className="bi bi-envelope-at-fill"></i><a className="link__black" href="mailto:mail@iusticia.ru"> Напишите нам</a>
