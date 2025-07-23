@@ -142,7 +142,7 @@ export default function Home() {
       <Carousel slides={feedbackSlides} maxWidth={300}/>
       <div className="feadback__stage">
         <h2 className="feadback__stage__header">Этапы работ</h2>
-        <p>
+        <p className="feadback__stage__text">
           1. Сбор информации, уточнение данных через типовые вопросы, формулировка вопроса или
           вопросов, <br/> которые станут предметом консультации. <br/>
           2. Оценка данных. Выясняем на каком основе будет проходить консультация (бесплатно или нет). В случае с
