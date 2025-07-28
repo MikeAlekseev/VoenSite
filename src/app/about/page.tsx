@@ -1,6 +1,12 @@
 import {Lables} from "@/app/components/Lables";
 
 import './page.about.css'
+import type {Metadata} from "next";
+
+export const metadata: Metadata = {
+    title: 'Военное правовое бюро "Юстиция" - о компании',
+    description: 'Краткое описание компании ВПБ "Юстиция"',
+};
 
 export default function Home () {
     return (

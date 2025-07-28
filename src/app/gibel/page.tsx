@@ -1,6 +1,13 @@
 import './page.gibel.css'
 import {AskQuestion} from "@/app/components/AskQuestion";
 import {Lables} from "@/app/components/Lables";
+import type {Metadata} from "next";
+
+export const metadata: Metadata = {
+        title: 'Выплаты по гибели на СВО - какие положены, помощь с получением | ВПБ "Юстиция"',
+        description: "Выплаты по гибели военнослужащего на СВО - какие положены, суммы, документы, помощь с получением",
+};
+
 export default function Home(){
     return (
         <>

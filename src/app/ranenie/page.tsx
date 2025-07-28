@@ -14,12 +14,18 @@ const ranenieSlides: CarouselSlide[] = [
 
 import './page.ranenie.css'
 import {Lables} from "@/app/components/Lables";
+import type {Metadata} from "next";
+
+export const metadata: Metadata = {
+    title: 'Выплаты за ранение участникам СВО - помощь с получением | ВПБ "Юстиция"',
+    description: "Выплаты за ранение на СВО - какие положены, необходимые документы, помощь с выплатами",
+};
 
 export default function Home(){
     return (
         <>
             <div className="help">
-                <h1 className="help__up pc-container">Выплаты по ранению</h1>
+                <h1 className="help__up pc-container">Выплаты за ранение</h1>
                 <div className="help__down pc-container">
                     <div className="help__down__left">
                         {/*<h2 className="help__down__left__header">Юридическая защита военнослужащих и их семей</h2>*/}

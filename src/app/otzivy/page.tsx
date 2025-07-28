@@ -15,6 +15,12 @@ import feedback6Img from "@/app/otzivy/resources/feedback6.jpg";
 import ranenieCase1Img from '@/app/otzivy/resources/1sbor.jpg'
 import ranenieCase2Img from '@/app/otzivy/resources/2sbor.jpg'
 import ranenieCase3Img from '@/app/otzivy/resources/3sbor.jpg'
+import type {Metadata} from "next";
+
+export const metadata: Metadata = {
+    title: 'Военное правовое бюро "Юстиция" - отзывы клиентов о работе',
+    description: 'Отзывы клиентов военного правового бюро "Юстиция"',
+};
 
 const feedbackSlides: CarouselSlide[] = [
     { id: '1', src: feedback1Img, alt: 'Отзыв' },

@@ -1,4 +1,11 @@
 import "./page.policy.css";
+import type {Metadata} from "next";
+
+export const metadata: Metadata = {
+    title: 'Военное правовое бюро "Юстиция" - политика конфиденциальности',
+    description: 'Политика конфиденциальности ВПБ "Юстиция"',
+};
+
 export default function Home() {
 
   return (
