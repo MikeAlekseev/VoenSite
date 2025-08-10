@@ -11,6 +11,8 @@ import feedback5Img from './resources/feedback5.jpg'
 import feedback6Img from './resources/feedback6.jpg'
 import {AskQuestion} from './components/AskQuestion'
 import {Lables} from "@/app/components/Lables";
+import Analytics from "@/app/components/Analytics/Analytics";
+import React from "react";
 
 const feedbackSlides: CarouselSlide[] = [
   { id: '1', src: feedback1Img, alt: 'Отзыв' },
@@ -24,6 +26,7 @@ const feedbackSlides: CarouselSlide[] = [
 export default function Home() {
   return (
       <>
+        <Analytics />
         <div className="help">
           <h1 className="help__up pc-container">Консультация военного юриста</h1>
           <div className="help__down pc-container">
