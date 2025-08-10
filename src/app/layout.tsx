@@ -106,7 +106,7 @@ export default function RootLayout({
                     </div>
                     <div className="footer__map">
                         <iframe
-                            src="https://yandex.ru/map-widget/v1/?um=constructor%3Adde35808e8071b3d5af89226029951ab2d04e82afcc1688ceb6e5f75b8cfc311&amp;source=constructor"
+                            src="https://yandex.ru/map-widget/v1/?um=constructor%3Afa1090c4cb241c665d3ce8b6c7785eedb1281925d601a1cb2e479c1062a8d34e&amp;source=constructor"
                             width="300"
                             height="200"
                             frameBorder="0">
