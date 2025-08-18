@@ -8,8 +8,9 @@ import logoImg2 from './resources/logo2.png'
 import "./globals.scss";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import React from "react";
-import Analytics from "@/app/components/Analytics/Analytics";
-// import {AskQuestion} from "@/app/AskQuestion";
+import '@/lib/analiticYandex'
+import {AnaliticGoogle} from "@/lib/AnaliticGoogle";
+
 
 
 const geistSans = Geist({
@@ -35,7 +36,8 @@ export default function RootLayout({
     return (
         <html lang="ru">
         <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <Analytics />
+
+        <AnaliticGoogle />
         <div className="top">
             <div className="header">
                 <div className="header__up pc-container">
