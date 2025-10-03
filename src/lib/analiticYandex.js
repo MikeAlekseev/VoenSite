@@ -14,6 +14,3 @@ if (typeof window !== "undefined") {
 
     ym(101013083, 'init', {clickmap:true, accurateTrackBounce:true, trackLinks:true});
 }
-
-
-
