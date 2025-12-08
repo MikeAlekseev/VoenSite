@@ -10,7 +10,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import React from "react";
 import '@/lib/analiticYandex'
 import {AnaliticGoogle} from "@/lib/AnaliticGoogle";
-
+import parrotImg from './resources/parrot.png'
 
 
 const geistSans = Geist({
@@ -105,6 +105,9 @@ export default function RootLayout({
                             <i className="bi bi-telephone-fill"></i><a className="link__white" href="tel:+79102210010"> +7-910-221-00-10</a>
                         </div>
                         <Link className="link__white" href="/cofidential">Политика конфиденциальности</Link>
+                        <a href="https://t.me/MikeAlexeev">
+                            <Image src={parrotImg} alt="parrot" width={150}/>
+                        </a>
                     </div>
                     <div className="footer__map">
                         <iframe
