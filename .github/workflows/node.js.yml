@@ -25,9 +25,11 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         script: |
           cd ~/${{ vars.PM2_APP_NAME }}
+          git reset --hard
           git pull
           export NVM_DIR=~/.nvm
           source ~/.nvm/nvm.sh
+          rm -rf .next
           npm ci
           npm run lint
           npm run build
