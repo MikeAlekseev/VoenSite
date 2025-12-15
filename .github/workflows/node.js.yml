@@ -25,6 +25,7 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         script: |
           cd ~/${{ vars.PM2_APP_NAME }}
+          set -e
           git reset --hard
           git pull
           export NVM_DIR=~/.nvm
